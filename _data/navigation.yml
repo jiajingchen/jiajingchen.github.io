@@ -1,12 +1,23 @@
 # main links
 main:
-  - title: "Quick-Start Guide"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-  # - title: "About"
-  #   url: https://mmistakes.github.io/minimal-mistakes/about/
-  # - title: "Sample Posts"
-  #   url: /year-archive/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
-  # - title: "Sitemap"
-  #   url: /sitemap/
+  - title: "About"
+    url: /about/
+  - title: "Blog"
+    url: /blog/
+  - title: "Gallery"
+    url: /gallery/
+  - title: "MISC"
+    url: /misc/
+#side bar. docs. use it by adding to the pages  nav: "docs"
+docs:
+  - title: Getting Started
+    children:
+      - title: "About"
+        url: /about/
+
+  - title: Content
+    children:
+      - title: "Gallery"
+        url: /gallery/
+      - title: "Second Post"
+        url: /second-post/
