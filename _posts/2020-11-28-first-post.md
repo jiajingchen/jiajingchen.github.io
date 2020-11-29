@@ -4,6 +4,7 @@ title:  "My first post"
 date:   2020-11-28
 category: test
 tags: [test_tag, statistics]
+comments: true
 sidebar:
   nav: "docs"
 ---
