@@ -27,35 +27,35 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 2em 0 0.5em;
-  line-height: 1.2;
+  margin: 1em 0 1em;
+  line-height: 1.4;
   font-family: $header-font-family;
   font-weight: bold;
+  color: $base00;
 }
-
 h1 {
   margin-top: 0;
-  font-size: $h-size-1;
+  font-size: $type-size-3;
 }
 
 h2 {
-  font-size: $h-size-2;
+  font-size: $type-size-4;
 }
 
 h3 {
-  font-size: $h-size-3;
+  font-size: $type-size-5;
 }
 
 h4 {
-  font-size: $h-size-4;
+  font-size: $type-size-6;
 }
 
 h5 {
-  font-size: $h-size-5;
+  font-size: $type-size-6;
 }
 
 h6 {
-  font-size: $h-size-6;
+  font-size: $type-size-6;
 }
 
 small,
@@ -64,7 +64,8 @@ small,
 }
 
 p {
-  margin-bottom: 1.3em;
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
 
 u,
@@ -107,11 +108,13 @@ abbr[data-original-title] {
 /* blockquotes */
 
 blockquote {
-  margin: 2em 1em 2em 0;
+  margin: 2em 1em 2em 2em;
   padding-left: 1em;
   padding-right: 1em;
   font-style: italic;
-  border-left: 0.25em solid $primary-color;
+  border-left: 0.25em solid $base00;
+  font-size: 0.85em;
+  text-align: justify;
 
   cite {
     font-style: italic;
