@@ -1,5 +1,5 @@
 ---
-title:  "Blog"
+title:  "Posts"
 layout: archive
 permalink: /blog/
 author_profile: true
@@ -8,7 +8,7 @@ sidebar:
   nav: "docs"
 ---
 
-Hi there! Welcome to my technical blog. I wrote about stuffs I am interested in.
+Welcome! I wrote about stuffs I am interested in.
 
 
 <ul>

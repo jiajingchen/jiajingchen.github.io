@@ -1,8 +1,10 @@
 # main links
 main:
-  - title: "About"
+  - title: "Home"
+    url: /
+  - title: "About Me"
     url: /about/
-  - title: "Blog"
+  - title: "Posts"
     url: /blog/
   - title: "Gallery"
     url: /gallery/
