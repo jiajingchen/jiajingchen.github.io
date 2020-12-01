@@ -1,6 +1,6 @@
 ---
 title:  "MISC"
-layout: archive
+layout: single
 permalink: /misc/
 author_profile: true
 comments: true

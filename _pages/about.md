@@ -1,6 +1,6 @@
 ---
 title:  "Posts"
-layout: archive
+layout: single
 title: "About"
 permalink: /about/
 comments: true
