@@ -9,8 +9,8 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Intro to data structure and algorithm Part I - Jiajing Chen</title>
-<meta name="description" content="About DFS, BFS and much more">
+<!-- begin _includes/seo.html --><title>The Little Schemer Reading Note Part I - Jiajing Chen</title>
+<meta name="description" content="Recursion, recursion, and more…">
 
 
   <meta name="author" content="Jiajing Chen">
@@ -22,15 +22,15 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="en">
 <meta property="og:site_name" content="Jiajing Chen">
-<meta property="og:title" content="Intro to data structure and algorithm Part I">
-<meta property="og:url" content="http://localhost:4000/post-algorithm-part-1/">
+<meta property="og:title" content="The Little Schemer Reading Note Part I">
+<meta property="og:url" content="http://localhost:4000/book/post-lisp-little-schemer-part-1/">
 
 
-  <meta property="og:description" content="About DFS, BFS and much more">
+  <meta property="og:description" content="Recursion, recursion, and more…">
 
 
 
-  <meta property="og:image" content="http://localhost:4000/assets/images/thumbnails/stat110logo.jpg">
+  <meta property="og:image" content="http://localhost:4000/assets/images/thumbnails/The_little_schemer.jpg">
 
 
 
@@ -47,7 +47,7 @@
   
 
 
-<link rel="canonical" href="http://localhost:4000/post-algorithm-part-1/">
+<link rel="canonical" href="http://localhost:4000/book/post-lisp-little-schemer-part-1/">
 
 
 
@@ -334,15 +334,15 @@
 
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Intro to data structure and algorithm Part I">
-    <meta itemprop="description" content="About DFS, BFS and much more">
+    <meta itemprop="headline" content="The Little Schemer Reading Note Part I">
+    <meta itemprop="description" content="Recursion, recursion, and more…">
     <meta itemprop="datePublished" content="2020-11-20T00:00:00-05:00">
     
 
     <div class="page__inner-wrap">
       
         <header>
-          <h1 id="page-title" class="page__title" itemprop="headline">Intro to data structure and algorithm Part I
+          <h1 id="page-title" class="page__title" itemprop="headline">The Little Schemer Reading Note Part I
 </h1>
           
 
@@ -364,7 +364,7 @@
       <span class="page__meta-readtime">
         <i class="far fa-clock" aria-hidden="true"></i>
         
-          less than 1 minute read
+          1 minute read
         
       </span>
     
@@ -376,38 +376,72 @@
 
       <section class="page__content" itemprop="text">
         
-        <p class="notice--primary"><em>This is Part I of the intro to data structure and algo series. See others here.</em></p>
-<p> 
- </p>
+        <p>The Little Schemer is an great book writen by Daniel P. Friedman and Matthias Felleisen. The book introduced concepts in computer science and functional programming in Scheme/Lisp. It is about <strong>recursion</strong> at its core. (look at the cover of the book and you will soon find out!)</p>
 
-<p>test code block here:</p>
+<p>The authors mentioned in the <a href="https://felleisen.org/matthias/BTLS-preface.html">preface</a> that:</p>
+<blockquote>
+  <p><em>The goal of this book is to teach the reader to think recursively</em>.</p>
+</blockquote>
 
-<ul>
-  <li>DFS</li>
-</ul>
+<p>I really love the way the book is structured by asking questions from simple examples and let the reader to think and grasp the concepts along the process. I don’t know about Lisp or Scheme language before reading the book but I was able to pick it up while reading through the questions and examples (It’s fascinating!). It’s pretty light in the first few chapters but quickly gets quite in depth. Especially chapter 9 &amp; 10.</p>
 
-<pre><code class="language-subset">class Solution:
-    def subsets(self, nums: List[int]) -&gt; List[List[int]]:
-        #backtracking
-        n = len(nums)
-        if n==0:
-            return []
-        def dfs(i, curr_path, res):
-            res.append(curr_path)
-            if len(curr_path)==n:
-                return
-            for j in range(i,n):
-                dfs(j+1, curr_path+[nums[j]], res)
-        res = []
-        curr_path = []
-        dfs(0, curr_path, res)
-        return res
-
-</code></pre>
+<p>Here are some basic concepts:</p>
 
 <ul>
-  <li>BFS</li>
+  <li>Basic data types:</li>
 </ul>
+
+<p><code class="language-plaintext highlighter-rouge">atom</code>: atom is the basic element</p>
+
+<p><code class="language-plaintext highlighter-rouge">list</code>: list</p>
+
+<p><code class="language-plaintext highlighter-rouge">S-expression</code>: basic element,</p>
+
+<p><code class="language-plaintext highlighter-rouge">tup</code>: tuple, list of number</p>
+
+<ul>
+  <li>Basic operations:</li>
+</ul>
+
+<p><code class="language-plaintext highlighter-rouge">cons</code>: concatenate between an atom and a list</p>
+
+<p><code class="language-plaintext highlighter-rouge">car l</code>: the first element in the list l</p>
+
+<p><code class="language-plaintext highlighter-rouge">cdr</code>:</p>
+
+<p><code class="language-plaintext highlighter-rouge">eq?</code>:</p>
+
+<p><code class="language-plaintext highlighter-rouge">lat?l</code>: if each S-expression in the list is an atom</p>
+
+<p><code class="language-plaintext highlighter-rouge">member?a l</code> : if a is a member in l</p>
+
+<p><code class="language-plaintext highlighter-rouge">first</code>:</p>
+
+<p><code class="language-plaintext highlighter-rouge">rmember?</code>:</p>
+
+<p>Here is an example of how recursion is used almost everywhere in the function definitions:</p>
+
+<p>Definition of <code class="language-plaintext highlighter-rouge">lat</code> (Chp2 p16)</p>
+
+<div class="language-lisp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">(</span><span class="nv">define</span> <span class="nv">lat?</span> 
+	<span class="p">(</span><span class="k">lambda</span> <span class="p">(</span><span class="nv">l</span><span class="p">)</span>
+		<span class="p">(</span><span class="nb">cond</span>
+			<span class="p">((</span><span class="nv">null?</span> <span class="nv">l</span><span class="p">)</span> <span class="err">#</span><span class="no">t</span> <span class="p">)</span>
+			<span class="p">((</span><span class="nv">atom?</span> <span class="p">(</span><span class="nb">car</span> <span class="nv">l</span><span class="p">))</span> <span class="p">(</span><span class="nv">lat?</span> <span class="p">(</span><span class="nb">cdr</span> <span class="nv">l</span><span class="p">)))</span> 
+			<span class="p">(</span><span class="nv">else</span> <span class="err">#</span><span class="nv">f</span><span class="p">))))</span>
+
+</code></pre></div></div>
+
+<p>The idea to define <code class="language-plaintext highlighter-rouge">lat</code> function is recurion. It first takes a look at the first element in the list <code class="language-plaintext highlighter-rouge">car l</code>, if it is an atom, then we will keep using the same function <code class="language-plaintext highlighter-rouge">lat</code> on the rest of the list <code class="language-plaintext highlighter-rouge">cdr l</code>. If it’s not an atom we return True <code class="language-plaintext highlighter-rouge">#t</code>.</p>
+
+<p>Note that the first condition <code class="language-plaintext highlighter-rouge">null? l</code> is very important because it serves as the termination condition to the recursion. The book mentioned it several time in later chapters as well.</p>
+
+<ul>
+  <li>Up Next</li>
+</ul>
+
+<p>In the part II we will talk more about recursion and lambda in this book. Stay tuned!</p>
+
 
         
       </section>
@@ -428,28 +462,43 @@
     
       
       
-      <a href="/tags/#algorithm" class="page__taxonomy-item" rel="tag">algorithm</a><span class="sep">, </span>
+      <a href="/tags/#book" class="page__taxonomy-item" rel="tag">book</a><span class="sep">, </span>
     
       
       
-      <a href="/tags/#bfs" class="page__taxonomy-item" rel="tag">bfs</a><span class="sep">, </span>
+      <a href="/tags/#lisp" class="page__taxonomy-item" rel="tag">lisp</a><span class="sep">, </span>
     
       
       
-      <a href="/tags/#data-structure" class="page__taxonomy-item" rel="tag">data structure</a><span class="sep">, </span>
+      <a href="/tags/#recursion" class="page__taxonomy-item" rel="tag">recursion</a><span class="sep">, </span>
     
       
       
-      <a href="/tags/#dfs" class="page__taxonomy-item" rel="tag">dfs</a><span class="sep">, </span>
-    
-      
-      
-      <a href="/tags/#graph" class="page__taxonomy-item" rel="tag">graph</a>
+      <a href="/tags/#scheme" class="page__taxonomy-item" rel="tag">scheme</a>
     
     </span>
   </p>
 
 
+
+
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/categories/#book" class="page__taxonomy-item" rel="tag">book</a>
+    
+    </span>
+  </p>
 
 
         
@@ -463,22 +512,22 @@
     <h4 class="page__share-title">Share on</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?text=Intro+to+data+structure+and+algorithm+Part+I%20http%3A%2F%2Flocalhost%3A4000%2Fpost-algorithm-part-1%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=The+Little+Schemer+Reading+Note+Part+I%20http%3A%2F%2Flocalhost%3A4000%2Fbook%2Fpost-lisp-little-schemer-part-1%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fpost-algorithm-part-1%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fbook%2Fpost-lisp-little-schemer-part-1%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Fpost-algorithm-part-1%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Fbook%2Fpost-lisp-little-schemer-part-1%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
 
       
   <nav class="pagination">
     
-      <a href="/stat/post-stat110-probability/" class="pagination--pager" title="STAT110: The Probability course you don’t want to miss
+      <a href="/post-algorithm-part-1/" class="pagination--pager" title="Intro to data structure and algorithm Part I
 ">Previous</a>
     
     
-      <a href="/book/post-lisp-little-schemer-part-1/" class="pagination--pager" title="The Little Schemer Reading Note Part I
+      <a href="/post-algorithm-part-2/" class="pagination--pager" title="Intro to data structure and algorithm Part II
 ">Next</a>
     
   </nav>
@@ -552,12 +601,12 @@
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-        <img src="/assets/images/thumbnails/The_little_schemer.jpg" alt="">
+        <img src="/assets/images/thumbnails/stat110logo.jpg" alt="">
       </div>
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/book/post-lisp-little-schemer-part-1/" rel="permalink">The Little Schemer Reading Note Part I
+        <a href="/post-algorithm-part-1/" rel="permalink">Intro to data structure and algorithm Part I
 </a>
       
     </h2>
@@ -581,14 +630,14 @@
       <span class="page__meta-readtime">
         <i class="far fa-fw fa-clock" aria-hidden="true"></i>
         
-          1 minute read
+          less than 1 minute read
         
       </span>
     
   </p>
 
 
-    <p class="archive__item-excerpt" itemprop="description">Recursion, recursion, and more…
+    <p class="archive__item-excerpt" itemprop="description">About DFS, BFS and much more
 </p>
   </article>
 </div>
@@ -702,8 +751,8 @@
     
   <script>
     var disqus_config = function () {
-      this.page.url = "http://localhost:4000/post-algorithm-part-1/";  /* Replace PAGE_URL with your page's canonical URL variable */
-      this.page.identifier = "/post-algorithm-part-1"; /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
+      this.page.url = "http://localhost:4000/book/post-lisp-little-schemer-part-1/";  /* Replace PAGE_URL with your page's canonical URL variable */
+      this.page.identifier = "/book/post-lisp-little-schemer-part-1"; /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
     };
     (function() { /* DON'T EDIT BELOW THIS LINE */
       var d = document, s = d.createElement('script');

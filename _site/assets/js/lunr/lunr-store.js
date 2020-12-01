@@ -10,4 +10,16 @@ var store = [{
         "tags": ["algorithm","data structure","dfs","bfs","graph"],
         "url": "http://localhost:4000/post-algorithm-part-1/",
         "teaser": "http://localhost:4000/assets/images/thumbnails/stat110logo.jpg"
+      },{
+        "title": "The Little Schemer Reading Note Part I",
+        "excerpt":"The Little Schemer is an great book writen by Daniel P. Friedman and Matthias Felleisen. The book introduced concepts in computer science and functional programming in Scheme/Lisp. It is about recursion at its core. (look at the cover of the book and you will soon find out!) The authors mentioned...","categories": ["book"],
+        "tags": ["recursion","lisp","scheme","book"],
+        "url": "http://localhost:4000/book/post-lisp-little-schemer-part-1/",
+        "teaser": "http://localhost:4000/assets/images/thumbnails/The_little_schemer.jpg"
+      },{
+        "title": "Intro to data structure and algorithm Part II",
+        "excerpt":"This is Part II of the intro to data structure and algo series. See others here.     BFS in Trees structure: max Depth in a tree def maxDepth(self, root: TreeNode) -&gt; int: #non-recursive, queue if not root: return 0 q = collections.deque() q.append(root) depth = 0 while q: depth+=1...","categories": [],
+        "tags": ["algorithm","data structure","dfs","bfs","graph"],
+        "url": "http://localhost:4000/post-algorithm-part-2/",
+        "teaser": "http://localhost:4000/assets/images/thumbnails/logo-data-structures-algorithms.png"
       }]
