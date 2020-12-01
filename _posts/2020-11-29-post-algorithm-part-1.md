@@ -2,8 +2,8 @@
 layout: single
 title:  "Intro to data structure and algorithm Part I"
 header:
-  teaser: /assets/images/thumbnails/stat110logo.jpg
-excerpt: "About DFS, BFS and much more"
+  teaser: /assets/images/thumbnails/logo-data-structures-algorithms.png
+excerpt: "DFS and backtracking "
 date:   2020-11-20
 category: 
 tags: [algorithm, data structure, dfs, bfs, graph]
