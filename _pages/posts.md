@@ -1,7 +1,7 @@
 ---
 title:  "Posts"
 layout: single
-permalink: /blog/
+permalink: /posts/
 author_profile: true
 comments: true
 sidebar:

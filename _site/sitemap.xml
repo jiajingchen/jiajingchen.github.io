@@ -20,9 +20,6 @@
 <loc>http://localhost:4000/about/</loc>
 </url>
 <url>
-<loc>http://localhost:4000/blog/</loc>
-</url>
-<url>
 <loc>http://localhost:4000/categories/</loc>
 </url>
 <url>
@@ -36,6 +33,9 @@
 </url>
 <url>
 <loc>http://localhost:4000/misc/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/posts/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/tags/</loc>
