@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-12-01T00:31:25-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Jiajing Chen</title><subtitle>Personal Website</subtitle><author><name>Jiajing Chen</name></author><entry><title type="html">Intro to data structure and algorithm Part II</title><link href="http://localhost:4000/post-algorithm-part-2/" rel="alternate" type="text/html" title="Intro to data structure and algorithm Part II" /><published>2020-11-30T00:00:00-05:00</published><updated>2020-11-30T00:00:00-05:00</updated><id>http://localhost:4000/post-algorithm-part-2</id><content type="html" xml:base="http://localhost:4000/post-algorithm-part-2/">&lt;p class=&quot;notice--primary&quot;&gt;&lt;em&gt;This is Part II of the intro to data structure and algo series. See others here.&lt;/em&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-12-02T01:01:52-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Jiajing Chen</title><subtitle>Personal Website</subtitle><author><name>Jiajing Chen</name></author><entry><title type="html">Intro to data structure and algorithm Part II</title><link href="http://localhost:4000/post-algorithm-part-2/" rel="alternate" type="text/html" title="Intro to data structure and algorithm Part II" /><published>2020-11-30T00:00:00-05:00</published><updated>2020-11-30T00:00:00-05:00</updated><id>http://localhost:4000/post-algorithm-part-2</id><content type="html" xml:base="http://localhost:4000/post-algorithm-part-2/">&lt;p class=&quot;notice--primary&quot;&gt;&lt;em&gt;This is Part II of the intro to data structure and algo series. See others here.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt; 
  &lt;/p&gt;
 
@@ -7,7 +7,7 @@
 &lt;/ul&gt;
 
 &lt;p&gt;max Depth in a tree&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;def maxDepth(self, root: TreeNode) -&amp;gt; int:
+&lt;pre&gt;&lt;code&gt;def maxDepth(self, root: TreeNode) -&amp;gt; int:
         #non-recursive, queue
         if not root:
             return 0
@@ -26,7 +26,7 @@
                     q.append(curr_node.right)
             
         return depth
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;ul&gt;
   &lt;li&gt;BFS in graph structure:&lt;/li&gt;
@@ -34,8 +34,8 @@
 
 &lt;p&gt;minimum steps in an island&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Jiajing Chen</name></author><category term="algorithm" /><category term="data structure" /><category term="dfs" /><category term="bfs" /><category term="graph" /><summary type="html">BFS and level order traversal using queue</summary></entry><entry><title type="html">Intro to data structure and algorithm Part I</title><link href="http://localhost:4000/post-algorithm-part-1/" rel="alternate" type="text/html" title="Intro to data structure and algorithm Part I" /><published>2020-11-20T00:00:00-05:00</published><updated>2020-11-20T00:00:00-05:00</updated><id>http://localhost:4000/post-algorithm-part-1</id><content type="html" xml:base="http://localhost:4000/post-algorithm-part-1/">&lt;p class=&quot;notice--primary&quot;&gt;&lt;em&gt;This is Part I of the intro to data structure and algo series. See others here.&lt;/em&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;
+&lt;/code&gt;&lt;/pre&gt;</content><author><name>Jiajing Chen</name></author><category term="algorithm" /><category term="data structure" /><category term="dfs" /><category term="bfs" /><category term="graph" /><summary type="html">BFS and level order traversal using queue</summary></entry><entry><title type="html">Intro to data structure and algorithm Part I</title><link href="http://localhost:4000/post-algorithm-part-1/" rel="alternate" type="text/html" title="Intro to data structure and algorithm Part I" /><published>2020-11-20T00:00:00-05:00</published><updated>2020-11-20T00:00:00-05:00</updated><id>http://localhost:4000/post-algorithm-part-1</id><content type="html" xml:base="http://localhost:4000/post-algorithm-part-1/">&lt;p class=&quot;notice--primary&quot;&gt;&lt;em&gt;This is Part I of the intro to data structure and algo series. See others here.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt; 
  &lt;/p&gt;
 
@@ -81,50 +81,50 @@
   &lt;li&gt;Basic data types:&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;atom&lt;/code&gt;: atom is the basic element&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;atom&lt;/code&gt;: atom is the basic element&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;list&lt;/code&gt;: list&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;list&lt;/code&gt;: list&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;S-expression&lt;/code&gt;: basic element,&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;S-expression&lt;/code&gt;: basic element,&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;tup&lt;/code&gt;: tuple, list of number&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;tup&lt;/code&gt;: tuple, list of number&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Basic operations:&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cons&lt;/code&gt;: concatenate between an atom and a list&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;cons&lt;/code&gt;: concatenate between an atom and a list&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;car l&lt;/code&gt;: the first element in the list l&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;car l&lt;/code&gt;: the first element in the list l&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cdr&lt;/code&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;cdr&lt;/code&gt;:&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;eq?&lt;/code&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;eq?&lt;/code&gt;:&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;lat?l&lt;/code&gt;: if each S-expression in the list is an atom&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;lat?l&lt;/code&gt;: if each S-expression in the list is an atom&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;member?a l&lt;/code&gt; : if a is a member in l&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;member?a l&lt;/code&gt; : if a is a member in l&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;first&lt;/code&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;first&lt;/code&gt;:&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rmember?&lt;/code&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;rmember?&lt;/code&gt;:&lt;/p&gt;
 
 &lt;p&gt;Here is an example of how recursion is used almost everywhere in the function definitions:&lt;/p&gt;
 
-&lt;p&gt;Definition of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;lat&lt;/code&gt; (Chp2 p16)&lt;/p&gt;
+&lt;p&gt;Definition of &lt;code&gt;lat&lt;/code&gt; (Chp2 p16)&lt;/p&gt;
 
-&lt;div class=&quot;language-lisp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;define&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;lat?&lt;/span&gt; 
-	&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;lambda&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;l&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-		&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cond&lt;/span&gt;
-			&lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;null?&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;l&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;t&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-			&lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;atom?&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;car&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;l&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;lat?&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cdr&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;l&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)))&lt;/span&gt; 
-			&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;f&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))))&lt;/span&gt;
+&lt;pre&gt;&lt;code class=&quot;language-lisp&quot;&gt;(define lat? 
+	(lambda (l)
+		(cond
+			((null? l) #t )
+			((atom? (car l)) (lat? (cdr l))) 
+			(else #f))))
 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;The idea to define &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;lat&lt;/code&gt; function is recurion. It first takes a look at the first element in the list &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;car l&lt;/code&gt;, if it is an atom, then we will keep using the same function &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;lat&lt;/code&gt; on the rest of the list &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cdr l&lt;/code&gt;. If it’s not an atom we return True &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;#t&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;The idea to define &lt;code&gt;lat&lt;/code&gt; function is recurion. It first takes a look at the first element in the list &lt;code&gt;car l&lt;/code&gt;, if it is an atom, then we will keep using the same function &lt;code&gt;lat&lt;/code&gt; on the rest of the list &lt;code&gt;cdr l&lt;/code&gt;. If it’s not an atom we return True &lt;code&gt;#t&lt;/code&gt;.&lt;/p&gt;
 
-&lt;p&gt;Note that the first condition &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;null? l&lt;/code&gt; is very important because it serves as the termination condition to the recursion. The book mentioned it several time in later chapters as well.&lt;/p&gt;
+&lt;p&gt;Note that the first condition &lt;code&gt;null? l&lt;/code&gt; is very important because it serves as the termination condition to the recursion. The book mentioned it several time in later chapters as well.&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Up Next&lt;/li&gt;

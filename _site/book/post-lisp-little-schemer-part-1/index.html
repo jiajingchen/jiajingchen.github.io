@@ -393,50 +393,50 @@
   <li>Basic data types:</li>
 </ul>
 
-<p><code class="language-plaintext highlighter-rouge">atom</code>: atom is the basic element</p>
+<p><code>atom</code>: atom is the basic element</p>
 
-<p><code class="language-plaintext highlighter-rouge">list</code>: list</p>
+<p><code>list</code>: list</p>
 
-<p><code class="language-plaintext highlighter-rouge">S-expression</code>: basic element,</p>
+<p><code>S-expression</code>: basic element,</p>
 
-<p><code class="language-plaintext highlighter-rouge">tup</code>: tuple, list of number</p>
+<p><code>tup</code>: tuple, list of number</p>
 
 <ul>
   <li>Basic operations:</li>
 </ul>
 
-<p><code class="language-plaintext highlighter-rouge">cons</code>: concatenate between an atom and a list</p>
+<p><code>cons</code>: concatenate between an atom and a list</p>
 
-<p><code class="language-plaintext highlighter-rouge">car l</code>: the first element in the list l</p>
+<p><code>car l</code>: the first element in the list l</p>
 
-<p><code class="language-plaintext highlighter-rouge">cdr</code>:</p>
+<p><code>cdr</code>:</p>
 
-<p><code class="language-plaintext highlighter-rouge">eq?</code>:</p>
+<p><code>eq?</code>:</p>
 
-<p><code class="language-plaintext highlighter-rouge">lat?l</code>: if each S-expression in the list is an atom</p>
+<p><code>lat?l</code>: if each S-expression in the list is an atom</p>
 
-<p><code class="language-plaintext highlighter-rouge">member?a l</code> : if a is a member in l</p>
+<p><code>member?a l</code> : if a is a member in l</p>
 
-<p><code class="language-plaintext highlighter-rouge">first</code>:</p>
+<p><code>first</code>:</p>
 
-<p><code class="language-plaintext highlighter-rouge">rmember?</code>:</p>
+<p><code>rmember?</code>:</p>
 
 <p>Here is an example of how recursion is used almost everywhere in the function definitions:</p>
 
-<p>Definition of <code class="language-plaintext highlighter-rouge">lat</code> (Chp2 p16)</p>
+<p>Definition of <code>lat</code> (Chp2 p16)</p>
 
-<div class="language-lisp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">(</span><span class="nv">define</span> <span class="nv">lat?</span> 
-	<span class="p">(</span><span class="k">lambda</span> <span class="p">(</span><span class="nv">l</span><span class="p">)</span>
-		<span class="p">(</span><span class="nb">cond</span>
-			<span class="p">((</span><span class="nv">null?</span> <span class="nv">l</span><span class="p">)</span> <span class="err">#</span><span class="no">t</span> <span class="p">)</span>
-			<span class="p">((</span><span class="nv">atom?</span> <span class="p">(</span><span class="nb">car</span> <span class="nv">l</span><span class="p">))</span> <span class="p">(</span><span class="nv">lat?</span> <span class="p">(</span><span class="nb">cdr</span> <span class="nv">l</span><span class="p">)))</span> 
-			<span class="p">(</span><span class="nv">else</span> <span class="err">#</span><span class="nv">f</span><span class="p">))))</span>
+<pre><code class="language-lisp">(define lat? 
+	(lambda (l)
+		(cond
+			((null? l) #t )
+			((atom? (car l)) (lat? (cdr l))) 
+			(else #f))))
 
-</code></pre></div></div>
+</code></pre>
 
-<p>The idea to define <code class="language-plaintext highlighter-rouge">lat</code> function is recurion. It first takes a look at the first element in the list <code class="language-plaintext highlighter-rouge">car l</code>, if it is an atom, then we will keep using the same function <code class="language-plaintext highlighter-rouge">lat</code> on the rest of the list <code class="language-plaintext highlighter-rouge">cdr l</code>. If it’s not an atom we return True <code class="language-plaintext highlighter-rouge">#t</code>.</p>
+<p>The idea to define <code>lat</code> function is recurion. It first takes a look at the first element in the list <code>car l</code>, if it is an atom, then we will keep using the same function <code>lat</code> on the rest of the list <code>cdr l</code>. If it’s not an atom we return True <code>#t</code>.</p>
 
-<p>Note that the first condition <code class="language-plaintext highlighter-rouge">null? l</code> is very important because it serves as the termination condition to the recursion. The book mentioned it several time in later chapters as well.</p>
+<p>Note that the first condition <code>null? l</code> is very important because it serves as the termination condition to the recursion. The book mentioned it several time in later chapters as well.</p>
 
 <ul>
   <li>Up Next</li>
