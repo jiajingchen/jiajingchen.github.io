@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-12-02T01:08:58-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Jiajing Chen</title><subtitle>Personal Website</subtitle><author><name>Jiajing Chen</name></author><entry><title type="html">Intro to data structure and algorithm Part II</title><link href="http://localhost:4000/post-algorithm-part-2/" rel="alternate" type="text/html" title="Intro to data structure and algorithm Part II" /><published>2020-11-30T00:00:00-05:00</published><updated>2020-11-30T00:00:00-05:00</updated><id>http://localhost:4000/post-algorithm-part-2</id><content type="html" xml:base="http://localhost:4000/post-algorithm-part-2/">&lt;p class=&quot;notice--primary&quot;&gt;&lt;em&gt;This is Part II of the intro to data structure and algo series. See others here.&lt;/em&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-12-03T12:43:56-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Jiajing Chen</title><subtitle>Personal Website</subtitle><author><name>Jiajing Chen</name></author><entry><title type="html">Intro to data structure and algorithm Part II</title><link href="http://localhost:4000/post-algorithm-part-2/" rel="alternate" type="text/html" title="Intro to data structure and algorithm Part II" /><published>2020-11-30T00:00:00-05:00</published><updated>2020-11-30T00:00:00-05:00</updated><id>http://localhost:4000/post-algorithm-part-2</id><content type="html" xml:base="http://localhost:4000/post-algorithm-part-2/">&lt;p class=&quot;notice--primary&quot;&gt;&lt;em&gt;This is Part II of the intro to data structure and algo series. See others here.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt; 
  &lt;/p&gt;
 
@@ -7,7 +7,8 @@
 &lt;/ul&gt;
 
 &lt;p&gt;max Depth in a tree&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;def maxDepth(self, root: TreeNode) -&amp;gt; int:
+
+&lt;pre&gt;&lt;code class=&quot;language-python&quot;&gt;def maxDepth(self, root: TreeNode) -&amp;gt; int:
         #non-recursive, queue
         if not root:
             return 0
@@ -45,7 +46,7 @@
   &lt;li&gt;DFS&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;pre&gt;&lt;code class=&quot;language-subset&quot;&gt;class Solution:
+&lt;pre&gt;&lt;code class=&quot;language-python&quot;&gt;class Solution:
     def subsets(self, nums: List[int]) -&amp;gt; List[List[int]]:
         #backtracking
         n = len(nums)
@@ -66,14 +67,14 @@
 
 &lt;ul&gt;
   &lt;li&gt;BFS&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Jiajing Chen</name></author><category term="algorithm" /><category term="data structure" /><category term="dfs" /><category term="bfs" /><category term="graph" /><summary type="html">DFS and backtracking</summary></entry><entry><title type="html">The Little Schemer Reading Note Part I</title><link href="http://localhost:4000/book/post-lisp-little-schemer-part-1/" rel="alternate" type="text/html" title="The Little Schemer Reading Note Part I" /><published>2020-11-20T00:00:00-05:00</published><updated>2020-11-20T00:00:00-05:00</updated><id>http://localhost:4000/book/post-lisp-little-schemer-part-1</id><content type="html" xml:base="http://localhost:4000/book/post-lisp-little-schemer-part-1/">&lt;p&gt;The Little Schemer is an great book writen by Daniel P. Friedman and Matthias Felleisen. The book introduced concepts in computer science and functional programming in Scheme/Lisp. It is about &lt;strong&gt;recursion&lt;/strong&gt; at its core. (look at the cover of the book and you will soon find out!)&lt;/p&gt;
+&lt;/ul&gt;</content><author><name>Jiajing Chen</name></author><category term="algorithm" /><category term="data structure" /><category term="dfs" /><category term="bfs" /><category term="graph" /><summary type="html">DFS and backtracking</summary></entry><entry><title type="html">The Little Schemer Reading Note Part I</title><link href="http://localhost:4000/book/post-lisp-little-schemer-part-1/" rel="alternate" type="text/html" title="The Little Schemer Reading Note Part I" /><published>2020-11-20T00:00:00-05:00</published><updated>2020-11-20T00:00:00-05:00</updated><id>http://localhost:4000/book/post-lisp-little-schemer-part-1</id><content type="html" xml:base="http://localhost:4000/book/post-lisp-little-schemer-part-1/">&lt;p&gt;The Little Schemer is a great book writen by Daniel P. Friedman and Matthias Felleisen. The book introduced concepts in computer science and functional programming in Scheme/Lisp. It is about &lt;strong&gt;recursion&lt;/strong&gt; at its core. (Check out the cover of the book and you will find out!)&lt;/p&gt;
 
 &lt;p&gt;The authors mentioned in the &lt;a href=&quot;https://felleisen.org/matthias/BTLS-preface.html&quot;&gt;preface&lt;/a&gt; that:&lt;/p&gt;
 &lt;blockquote&gt;
   &lt;p&gt;&lt;em&gt;The goal of this book is to teach the reader to think recursively&lt;/em&gt;.&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;I really love the way the book is structured by asking questions from simple examples and let the reader to think and grasp the concepts along the process. I don’t know about Lisp or Scheme language before reading the book but I was able to pick it up while reading through the questions and examples (It’s fascinating!). It’s pretty light in the first few chapters but quickly gets quite in depth. Especially chapter 9 &amp;amp; 10.&lt;/p&gt;
+&lt;p&gt;I really love the way the book is structured by asking questions from simple examples and let the readers to think and grasp the concepts along the process. I don’t know about Lisp or Scheme language beforehand but I was able to pick it up through its unique Q&amp;amp;A style of teaching (It’s fascinating!). It’s pretty light in the first few chapters but quickly gets quite in depth. Especially chapter 9 &amp;amp; 10.&lt;/p&gt;
 
 &lt;p&gt;Here are some basic concepts:&lt;/p&gt;
 
@@ -97,11 +98,11 @@
 
 &lt;p&gt;&lt;code&gt;car l&lt;/code&gt;: the first element in the list l&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;cdr&lt;/code&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;cdr&lt;/code&gt;l: a list consists of the rest of the list l excludes its first element&lt;/p&gt;
 
 &lt;p&gt;&lt;code&gt;eq?&lt;/code&gt;:&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;lat?l&lt;/code&gt;: if each S-expression in the list is an atom&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;lat?l&lt;/code&gt;: if each S-expression in the list l is an atom&lt;/p&gt;
 
 &lt;p&gt;&lt;code&gt;member?a l&lt;/code&gt; : if a is a member in l&lt;/p&gt;
 
@@ -113,13 +114,12 @@
 
 &lt;p&gt;Definition of &lt;code&gt;lat&lt;/code&gt; (Chp2 p16)&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&quot;language-lisp&quot;&gt;(define lat? 
-	(lambda (l)
-		(cond
-			((null? l) #t )
-			((atom? (car l)) (lat? (cdr l))) 
-			(else #f))))
-
+&lt;pre&gt;&lt;code&gt;(define lat? 
+ (lambda (l)
+  (cond
+   ((null? l) #t )
+     ((atom? (car l)) (lat? (cdr l))) 
+      (else #f))))
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;The idea to define &lt;code&gt;lat&lt;/code&gt; function is recurion. It first takes a look at the first element in the list &lt;code&gt;car l&lt;/code&gt;, if it is an atom, then we will keep using the same function &lt;code&gt;lat&lt;/code&gt; on the rest of the list &lt;code&gt;cdr l&lt;/code&gt;. If it’s not an atom we return True &lt;code&gt;#t&lt;/code&gt;.&lt;/p&gt;

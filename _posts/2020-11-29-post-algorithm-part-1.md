@@ -21,7 +21,7 @@ test code block here:
 
 - DFS
 
-```subset
+```python
 class Solution:
     def subsets(self, nums: List[int]) -> List[List[int]]:
         #backtracking

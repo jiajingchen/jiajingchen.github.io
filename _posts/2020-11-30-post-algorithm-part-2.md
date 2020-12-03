@@ -21,7 +21,8 @@ _This is Part II of the intro to data structure and algo series. See others here
 - BFS in Trees structure:
 
 max Depth in a tree
-```
+
+```python
 def maxDepth(self, root: TreeNode) -> int:
         #non-recursive, queue
         if not root:

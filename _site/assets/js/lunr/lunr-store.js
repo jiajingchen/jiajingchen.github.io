@@ -12,7 +12,7 @@ var store = [{
         "teaser": "http://localhost:4000/assets/images/thumbnails/logo-data-structures-algorithms.png"
       },{
         "title": "The Little Schemer Reading Note Part I",
-        "excerpt":"The Little Schemer is an great book writen by Daniel P. Friedman and Matthias Felleisen. The book introduced concepts in computer science and functional programming in Scheme/Lisp. It is about recursion at its core. (look at the cover of the book and you will soon find out!) The authors mentioned...","categories": ["book"],
+        "excerpt":"The Little Schemer is a great book writen by Daniel P. Friedman and Matthias Felleisen. The book introduced concepts in computer science and functional programming in Scheme/Lisp. It is about recursion at its core. (Check out the cover of the book and you will find out!) The authors mentioned in...","categories": ["book"],
         "tags": ["recursion","lisp","scheme","book"],
         "url": "http://localhost:4000/book/post-lisp-little-schemer-part-1/",
         "teaser": "http://localhost:4000/assets/images/thumbnails/The_little_schemer.jpg"

@@ -12,13 +12,13 @@ sidebar:
   nav: "docs"
 ---
 
-The Little Schemer is an great book writen by Daniel P. Friedman and Matthias Felleisen. The book introduced concepts in computer science and functional programming in Scheme/Lisp. It is about **recursion** at its core. (look at the cover of the book and you will soon find out!)
+The Little Schemer is a great book writen by Daniel P. Friedman and Matthias Felleisen. The book introduced concepts in computer science and functional programming in Scheme/Lisp. It is about **recursion** at its core. (Check out the cover of the book and you will find out!)
 
 The authors mentioned in the [preface](https://felleisen.org/matthias/BTLS-preface.html) that:
 > *The goal of this book is to teach the reader to think recursively*.
 
 
-I really love the way the book is structured by asking questions from simple examples and let the reader to think and grasp the concepts along the process. I don't know about Lisp or Scheme language before reading the book but I was able to pick it up while reading through the questions and examples (It's fascinating!). It's pretty light in the first few chapters but quickly gets quite in depth. Especially chapter 9 & 10.
+I really love the way the book is structured by asking questions from simple examples and let the readers to think and grasp the concepts along the process. I don't know about Lisp or Scheme language beforehand but I was able to pick it up through its unique Q&A style of teaching (It's fascinating!). It's pretty light in the first few chapters but quickly gets quite in depth. Especially chapter 9 & 10.
 
 Here are some basic concepts:
 
@@ -38,11 +38,11 @@ Here are some basic concepts:
 
 `car l`: the first element in the list l
 
-`cdr`:
+`cdr`l: a list consists of the rest of the list l excludes its first element 
 
 `eq?`:
 
-`lat?l`: if each S-expression in the list is an atom
+`lat?l`: if each S-expression in the list l is an atom
 
 `member?a l` : if a is a member in l
 
@@ -54,15 +54,16 @@ Here is an example of how recursion is used almost everywhere in the function de
 
 Definition of `lat` (Chp2 p16)
 
-```lisp
-(define lat? 
-	(lambda (l)
-		(cond
-			((null? l) #t )
-			((atom? (car l)) (lat? (cdr l))) 
-			(else #f))))
-
 ```
+(define lat? 
+ (lambda (l)
+  (cond
+   ((null? l) #t )
+     ((atom? (car l)) (lat? (cdr l))) 
+      (else #f))))
+```
+
+
 
 The idea to define `lat` function is recurion. It first takes a look at the first element in the list `car l`, if it is an atom, then we will keep using the same function `lat` on the rest of the list `cdr l`. If it's not an atom we return True `#t`.
 

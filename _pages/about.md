@@ -8,12 +8,16 @@ sidebar:
   nav: "docs"
 ---
 
-Hi! This is Jiajing Chen.
+Hi! This is Jiajing Chen. 
 
-
+I am data scientist who develops machine learning and statistical models that provide values to the product and business.
 
 Interests
 ============
+I am interested in the state-of-art model development in recommendation system, deep learning, and NLP (Transformer, BERT). I like coding and solving challenging problems.
+
+In my spare time I like reading, drawing, and spending time outdoors.
+
 
 
 Links

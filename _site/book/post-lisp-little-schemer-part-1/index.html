@@ -378,14 +378,14 @@
 
       <section class="page__content" itemprop="text">
         
-        <p>The Little Schemer is an great book writen by Daniel P. Friedman and Matthias Felleisen. The book introduced concepts in computer science and functional programming in Scheme/Lisp. It is about <strong>recursion</strong> at its core. (look at the cover of the book and you will soon find out!)</p>
+        <p>The Little Schemer is a great book writen by Daniel P. Friedman and Matthias Felleisen. The book introduced concepts in computer science and functional programming in Scheme/Lisp. It is about <strong>recursion</strong> at its core. (Check out the cover of the book and you will find out!)</p>
 
 <p>The authors mentioned in the <a href="https://felleisen.org/matthias/BTLS-preface.html">preface</a> that:</p>
 <blockquote>
   <p><em>The goal of this book is to teach the reader to think recursively</em>.</p>
 </blockquote>
 
-<p>I really love the way the book is structured by asking questions from simple examples and let the reader to think and grasp the concepts along the process. I don’t know about Lisp or Scheme language before reading the book but I was able to pick it up while reading through the questions and examples (It’s fascinating!). It’s pretty light in the first few chapters but quickly gets quite in depth. Especially chapter 9 &amp; 10.</p>
+<p>I really love the way the book is structured by asking questions from simple examples and let the readers to think and grasp the concepts along the process. I don’t know about Lisp or Scheme language beforehand but I was able to pick it up through its unique Q&amp;A style of teaching (It’s fascinating!). It’s pretty light in the first few chapters but quickly gets quite in depth. Especially chapter 9 &amp; 10.</p>
 
 <p>Here are some basic concepts:</p>
 
@@ -409,11 +409,11 @@
 
 <p><code>car l</code>: the first element in the list l</p>
 
-<p><code>cdr</code>:</p>
+<p><code>cdr</code>l: a list consists of the rest of the list l excludes its first element</p>
 
 <p><code>eq?</code>:</p>
 
-<p><code>lat?l</code>: if each S-expression in the list is an atom</p>
+<p><code>lat?l</code>: if each S-expression in the list l is an atom</p>
 
 <p><code>member?a l</code> : if a is a member in l</p>
 
@@ -425,13 +425,12 @@
 
 <p>Definition of <code>lat</code> (Chp2 p16)</p>
 
-<pre><code class="language-lisp">(define lat? 
-	(lambda (l)
-		(cond
-			((null? l) #t )
-			((atom? (car l)) (lat? (cdr l))) 
-			(else #f))))
-
+<pre><code>(define lat? 
+ (lambda (l)
+  (cond
+   ((null? l) #t )
+     ((atom? (car l)) (lat? (cdr l))) 
+      (else #f))))
 </code></pre>
 
 <p>The idea to define <code>lat</code> function is recurion. It first takes a look at the first element in the list <code>car l</code>, if it is an atom, then we will keep using the same function <code>lat</code> on the rest of the list <code>cdr l</code>. If it’s not an atom we return True <code>#t</code>.</p>
