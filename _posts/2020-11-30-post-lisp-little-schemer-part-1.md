@@ -17,7 +17,7 @@ sidebar:
 
 ***The Little Schemer*** is a great book writen by Daniel P. Friedman and Matthias Felleisen. The book introduced concepts in computer science and functional programming in Scheme/Lisp. It is about **recursion** at its core. (Check out the cover of the book and you will find out!)
 
-The authors mentioned in the [preface](https://felleisen.org/matthias/BTLS-preface.html) that:
+The authors mentioned in the [*preface*](https://felleisen.org/matthias/BTLS-preface.html) that:
 
 > *The goal of this book is to teach the reader to think recursively*.
 
@@ -44,7 +44,7 @@ Here is the table of contents of *The Little Schemer*. It's pretty light in the 
 
 Here are some resources I found very useful when I read through the book. 
 
-- Two talks on Youtube given by [David Christiansen](https://www.youtube.com/watch?v=VxINoKFm-S4) and [Andy Balaam](https://www.youtube.com/watch?v=tA1clbGDczI&t=3860s).
+- Two talks on YouTube given by [David Christiansen](https://www.youtube.com/watch?v=VxINoKFm-S4) and [Andy Balaam](https://www.youtube.com/watch?v=tA1clbGDczI&t=3860s).
 
 - [The little schemer repo](https://github.com/pkrumins/the-little-schemer) with code and examples in book 
 
