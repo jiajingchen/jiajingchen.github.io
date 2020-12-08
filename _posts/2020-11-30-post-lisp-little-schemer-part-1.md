@@ -13,7 +13,7 @@ sidebar:
 ---
 ![](/assets/images/thumbnails/The_little_schemer.jpg)
 
-### Intro
+### Introduction
 
 ***The Little Schemer*** is a great book writen by Daniel P. Friedman and Matthias Felleisen. The book introduced concepts in computer science and functional programming in Scheme/Lisp. It is about **recursion** at its core. (Check out the cover of the book and you will find out!)
 
@@ -47,11 +47,14 @@ Here are some resources I found very useful when I read through the book.
 - the talk given by 
 - [The little schemer repo](https://github.com/pkrumins/the-little-schemer) with code and examples in book 
 
-If you want to run Scheme/LISP on your computer without a Scheme interpreter. [Here](https://www.viget.com/articles/the-little-schemer-will-expand-blow-your-mind/) is a tutorial on how to do so through REPL
+If you want to run Scheme/LISP on your computer without a Scheme interpreter. [Here](https://www.viget.com/articles/the-little-schemer-will-expand-blow-your-mind/) is a tutorial on how to do so through REPL.
 
-Ok, let's get started! Today we are going through some basic concepts in the first few chapters and some great examples about how functions are defined using recursion.
+
 
 ### Basic concepts
+
+Ok, let's get started! Today we are going through some basic concepts in the first few chapters and some great examples about how functions are defined using recursion. The first chapter talks about basic data types and operation. The second chapter introduces two recursive functions using those basic data types & operations. 
+
 
 - Basic data types:
 
@@ -59,7 +62,7 @@ Ok, let's get started! Today we are going through some basic concepts in the fir
 
 `list`: We use parentheses `()` to specify list of values (S-expressions). For example, `(a b c)` is a list, `((a b c) x y z)` is also a list.
 
-`S-expression`: basic element, 
+`S-expression`: An S-expression is either an atom or a collection of S-expressions enclosed in parentheses. The second form of S-expressions are known as lists.
 
 
 - Basic functions:
@@ -78,12 +81,12 @@ Ok, let's get started! Today we are going through some basic concepts in the fir
 
 `member? a l` : check if a is a member in l
 
-`rmember? a l`: remove member a from list l
+`rmember? a l`: remove the first occurance of the atom `a` from the  list `l`. E.g `rember cup (coffee cup tea cup and hick cup)` will return `(coffee tea cup and hick cup)`.
 
 
-![](https://i.imgur.com/V9GPGUq.jpg)
+![](https://i.imgur.com/V9GPGUq.jpg=100x20)
 
-### Examples
+### Examples using recursion
 
 Here is an example of how recursion is used almost everywhere in the function definitions:
 
@@ -102,19 +105,6 @@ Here is an example of how recursion is used almost everywhere in the function de
 The idea to define `lat` function is recurion. It first takes a look at the first element in the list `car l`, if it is an atom, then we will keep using the same function `lat` on the rest of the list `cdr l`. If it's not an atom we return False `#f`.
 
 
-Note that the first condition `null? ` is very important because it serves as the termination condition to the recursion. It's so important that it's listed as a *commendent* in the book (There are 10 commandments in the book and we will talked about it later):
-
-<i class="far fa-sticky-note"></i> **The First Commandment: ** 
-Always ask `null?` as the first question in expressing any function. 
-{: .notice--info}
-{: .text-justify}
-
-
-<i class="far fa-sticky-note"></i> **The Fourth Commandment: ** 
-Always change at least one argument while recurring. It must be changed to be closer to termination. The changing argument must be tested in the termination condition: when using `cdr`, test the termination with `null?`.
-{: .notice--info}
-{: .text-justify}
-
 
 - Definition of `member?` function (Chp2 p22)
 
@@ -126,12 +116,52 @@ Always change at least one argument while recurring. It must be changed to be cl
       (else (or (eq? (car lat) a)
         (member? a (cdr lat)))))))
 ```
+
 Similar to `lat` function, `member` looks at the first element `car l` in the list to check if it equals to `a`, then using the same function recursively on the other part of the list excluding first element `cdr l`.
+
+
+Note that the first condition `null? ` is very important because it serves as the termination condition to the recursion. It's so important that it's listed as a *commendent* in the book (There are 10 commandments in the book and we will talked about it later):
+
+
+<i class="far fa-sticky-note"></i> **The First Commandment:** 
+Always ask `null?` as the first question in expressing any function. 
+{: .notice--info}
+{: .text-justify}
+
+
+<i class="far fa-sticky-note"></i> **The Fourth Commandment:** 
+Always change at least one argument while recurring. It must be changed to be closer to termination. The changing argument must be tested in the termination condition: when using `cdr`, test the termination with `null?`.
+{: .notice--info}
+{: .text-justify}
+
+
+- Using recursion, could you write your own function for `rember` (remove the first occurance of the given atom from the given list)?
+
+
+```lisp
+(define rember
+  (lambda (a lat)
+    (cond
+      ((null? lat) (quote()))
+      ((eq? (car lat) a) (cdr lat))
+      (else (cons (car lat)
+                  (rember a (cdr lat)))))))
+```
 
 
 
 <i class="far fa-sticky-note"></i> **Up Next:** 
-In the part II we will talk more about recursion and lambda in this book. Stay tuned!.
+In the part II we will talk more about recursion and lambda in this book. Stay tuned!
 {: .notice--info}
 {: .text-justify}
 
+
+
+
+### References
+
+[The little schemer repo](https://github.com/pkrumins/the-little-schemer)
+
+[The Little Schemer in Hy repo](https://github.com/andybp85/hyLittleSchemer)
+
+[A post about The Little Schemer](https://www.viget.com/articles/the-little-schemer-will-expand-blow-your-mind/) 
