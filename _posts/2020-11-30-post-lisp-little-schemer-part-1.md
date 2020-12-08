@@ -85,7 +85,7 @@ Ok, let's get started! Today we are going through some basic concepts in the fir
 `rmember? a l`: remove the first occurance of the atom `a` from the  list `l`. E.g `rember cup (coffee cup tea cup and hick cup)` will return `(coffee tea cup and hick cup)`.
 
 
-![](https://i.imgur.com/V9GPGUq.jpg=100x20)
+![](https://i.imgur.com/V9GPGUq.jpg=10x15)
 
 ## Examples using recursion
 
