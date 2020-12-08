@@ -3,9 +3,9 @@ layout: single
 title:  "The Little Schemer Reading Note Part I"
 header:
   teaser: /assets/images/thumbnails/The_little_schemer.jpg
-excerpt: "Recursion, recursion, and recursion... This book will break your mind!"
+excerpt: "Recursion, recursion, and recursion... This book will blow your mind!"
 date:   2020-11-20
-category: book
+category: scheme
 tags: [recursion, lisp, scheme, book]
 comments: true
 sidebar:
@@ -121,7 +121,7 @@ The idea to define `lat` function is recurion. It first takes a look at the firs
 Similar to `lat` function, `member` looks at the first element `car l` in the list to check if it equals to `a`, then using the same function recursively on the other part of the list excluding first element `cdr l`.
 
 
-Note that the first condition `null? ` is very important because it serves as the **termination condition** to the recursion. It's so important that it's listed as the very first **commandment** in the book (There are 10 commandments in the book and we will talked about it later).
+Note that the first condition `null?` is very important because it serves as the **termination condition** to the recursion. It's so important that it's listed as the very first **commandment** in the book (There are 10 commandments in the book and we will talked about it later).
 
 
 
@@ -142,6 +142,9 @@ Always change at least one argument while recurring. It must be changed to be cl
 
 - Using recursion, could you write your own function for `rember` (remove the first occurance of the given atom from the given list)?
 
+
+
+Here is the answer:
 
 ```lisp
 (define rember
