@@ -13,7 +13,7 @@ sidebar:
 ---
 ![](/assets/images/thumbnails/The_little_schemer.jpg)
 
-### Introduction
+## Introduction
 
 ***The Little Schemer*** is a great book writen by Daniel P. Friedman and Matthias Felleisen. The book introduced concepts in computer science and functional programming in Scheme/Lisp. It is about **recursion** at its core. (Check out the cover of the book and you will find out!)
 
@@ -40,23 +40,24 @@ Here is the table of contents of *The Little Schemer*. It's pretty light in the 
 
 
 
-### Resource to get started
+## Resource to get started
 
 Here are some resources I found very useful when I read through the book. 
 
-- the talk given by 
+- Two talks on Youtube given by [David Christiansen](https://www.youtube.com/watch?v=VxINoKFm-S4) and [Andy Balaam](https://www.youtube.com/watch?v=tA1clbGDczI&t=3860s).
+
 - [The little schemer repo](https://github.com/pkrumins/the-little-schemer) with code and examples in book 
 
 If you want to run Scheme/LISP on your computer without a Scheme interpreter. [Here](https://www.viget.com/articles/the-little-schemer-will-expand-blow-your-mind/) is a tutorial on how to do so through REPL.
 
 
 
-### Basic concepts
+## Basic concepts
 
 Ok, let's get started! Today we are going through some basic concepts in the first few chapters and some great examples about how functions are defined using recursion. The first chapter talks about basic data types and operation. The second chapter introduces two recursive functions using those basic data types & operations. 
 
 
-- Basic data types:
+### Basic data types:
 
 `atom`: The atom is the basic element in Scheme. An atom is a constant whose name is its own value. 
 
@@ -65,7 +66,7 @@ Ok, let's get started! Today we are going through some basic concepts in the fir
 `S-expression`: An S-expression is either an atom or a collection of S-expressions enclosed in parentheses. The second form of S-expressions are known as lists.
 
 
-- Basic functions:
+### Basic functions:
 
 `car l`: return the first element in the list. E.g. `car (a b c)` will give you `a`. The primitive car is defined only for non-empty lists.
 
@@ -86,7 +87,7 @@ Ok, let's get started! Today we are going through some basic concepts in the fir
 
 ![](https://i.imgur.com/V9GPGUq.jpg=100x20)
 
-### Examples using recursion
+## Examples using recursion
 
 Here is an example of how recursion is used almost everywhere in the function definitions:
 
@@ -120,13 +121,17 @@ The idea to define `lat` function is recurion. It first takes a look at the firs
 Similar to `lat` function, `member` looks at the first element `car l` in the list to check if it equals to `a`, then using the same function recursively on the other part of the list excluding first element `cdr l`.
 
 
-Note that the first condition `null? ` is very important because it serves as the termination condition to the recursion. It's so important that it's listed as a *commendent* in the book (There are 10 commandments in the book and we will talked about it later):
+Note that the first condition `null? ` is very important because it serves as the **termination condition** to the recursion. It's so important that it's listed as the very first **commandment** in the book (There are 10 commandments in the book and we will talked about it later).
+
 
 
 <i class="far fa-sticky-note"></i> **The First Commandment:** 
 Always ask `null?` as the first question in expressing any function. 
 {: .notice--info}
 {: .text-justify}
+
+The other thing I want to point out in this two examples is that: by recursively using the same function on `cdr lat`, we are also reducing the size of the input in this recursion. By doing so each time we are shrinking the size of the list by 1 and getting closer to the termination condition (null). This is also covered in the fourth  **commandment**:
+
 
 
 <i class="far fa-sticky-note"></i> **The Fourth Commandment:** 
