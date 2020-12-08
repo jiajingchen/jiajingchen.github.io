@@ -140,7 +140,8 @@ Always change at least one argument while recurring. It must be changed to be cl
 {: .text-justify}
 
 
-- Using recursion, could you write your own function for `rember` (remove the first occurance of the given atom from the given list)?
+- A little quiz here: 
+By using recursion, can you write your own definition for function `rember` (remove the first occurance of the given atom from the given list)?
 
 
 
