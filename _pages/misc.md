@@ -4,7 +4,6 @@ layout: single
 permalink: /misc/
 author_profile: true
 comments: true
-
 ---
 
 Hi there! Welcome to my MISC corner, where I posted about random stuffs.
