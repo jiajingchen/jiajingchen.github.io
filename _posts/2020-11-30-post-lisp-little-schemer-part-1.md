@@ -82,10 +82,10 @@ Ok, let's get started! Today we are going through some basic concepts in the fir
 
 `member? a l` : check if a is a member in l
 
-`rmember? a l`: remove the first occurance of the atom `a` from the  list `l`. E.g `rember cup (coffee cup tea cup and hick cup)` will return `(coffee tea cup and hick cup)`.
+`rmember? a l`: remove the first occurance of the atom `a` from the  list `l`. E.g `rember b (a b c b c)` will return `(a c b c)`.
 
 
-![](https://i.imgur.com/V9GPGUq.jpg=10x15)
+![](/assets/images/post_image/little_schemer_1.jpg)
 
 ## Examples using recursion
 
@@ -130,7 +130,7 @@ Always ask `null?` as the first question in expressing any function.
 {: .notice--info}
 {: .text-justify}
 
-The other thing I want to point out in this two examples is that: by recursively using the same function on `cdr lat`, we are also reducing the size of the input in this recursion. By doing so each time we are shrinking the size of the list by 1 and getting closer to the termination condition (null). This is also covered in the fourth  **commandment**:
+Also, by recursively using the same function on `cdr lat`, we are reducing the size of the input in this recursion. Each round of calling the function, we are shrinking the size of the list by 1 and getting closer to the termination condition `null?`. This is also covered in the fourth  **commandment**:
 
 
 
@@ -156,9 +156,12 @@ Always change at least one argument while recurring. It must be changed to be cl
 
 
 <i class="far fa-sticky-note"></i> **Up Next:** 
-In the part II we will talk more about recursion and lambda in this book. Stay tuned!
+In the part II we will talk more about recursion and lambda in this book. Stay tuned and may the recursion be with you!
 {: .notice--info}
 {: .text-justify}
+
+
+![](/assets/images/post_image/may_the_recursion_be_with_u.png)
 
 
 
