@@ -40,44 +40,48 @@ Here is the table of contents of *The Little Schemer*. It's pretty light in the 
 
 
 
-### Resource and code
+### Resource to get started
 
 Here are some resources I found very useful when I read through the book. 
 
 - the talk given by 
 - [The little schemer repo](https://github.com/pkrumins/the-little-schemer) with code and examples in book 
 
-If you want to run Scheme/LISP on your computer without a Scheme interpreter. Here is a tutorial on how to do so through jupyter notebook
+If you want to run Scheme/LISP on your computer without a Scheme interpreter. [Here](https://www.viget.com/articles/the-little-schemer-will-expand-blow-your-mind/) is a tutorial on how to do so through REPL
 
-Ok, let's get started! Today we are going through some basic concepts in this book and examples of how functions are defined using recursion.
+Ok, let's get started! Today we are going through some basic concepts in the first few chapters and some great examples about how functions are defined using recursion.
 
 ### Basic concepts
 
 - Basic data types:
 
-`atom`: atom is the basic element 
+`atom`: The atom is the basic element in Scheme. An atom is a constant whose name is its own value. 
 
-`list`: list
+`list`: We use parentheses `()` to specify list of values (S-expressions). For example, `(a b c)` is a list, `((a b c) x y z)` is also a list.
 
 `S-expression`: basic element, 
 
-`tup`: tuple, list of number
 
-- Basic operations:
+- Basic functions:
 
-`cons`: concatenate between an atom and a list
+`car l`: return the first element in the list. E.g. `car (a b c)` will give you `a`. The primitive car is defined only for non-empty lists.
 
-`car`: the first element in the list
+`cdr l`: return a list consists of the rest of the list excluding its first element. The primitive cdr is defined only for non-empty lists. The cdr of any non-empty list will always return another list. E.g. `cdr (a b c)` will give you `(b c)`. 
 
-`cdr`: a list consists of the rest of the list l excludes its first element 
+`cons a l`: Concatenate between an atom `a` and a list `l`. The primitive cons takes two arguments and the second argument to cons must be a list. The result is also a list. E.g. `cons a (b c)` will give you `(a b c)`.
 
-`eq?`: check if two element are equal.
+`null? l` return ture if list is empty. The primitive null? is defined only for lists.
 
-`lat?`: if each S-expression in the list is an atom
+`eq? a b`: check if two element are equal.
 
-`member? a l` : if a is a member in l
+`lat? l`: check if each S-expression in the list is an atom
+
+`member? a l` : check if a is a member in l
 
 `rmember? a l`: remove member a from list l
+
+
+![](https://i.imgur.com/V9GPGUq.jpg)
 
 ### Examples
 
@@ -85,7 +89,7 @@ Here is an example of how recursion is used almost everywhere in the function de
 
 - Definition of `lat` function (Chp2 p16)
 
-```
+```lisp
 (define lat? 
  (lambda (l)
   (cond
@@ -95,19 +99,34 @@ Here is an example of how recursion is used almost everywhere in the function de
 ```
 
 
-
 The idea to define `lat` function is recurion. It first takes a look at the first element in the list `car l`, if it is an atom, then we will keep using the same function `lat` on the rest of the list `cdr l`. If it's not an atom we return False `#f`.
 
 
-<i class="far fa-sticky-note"></i> **Note:** 
-The first condition `null? l` is very important because it serves as the termination condition to the recursion. The book mentioned it several time in later chapters as well.
+Note that the first condition `null? ` is very important because it serves as the termination condition to the recursion. It's so important that it's listed as a *commendent* in the book (There are 10 commandments in the book and we will talked about it later):
+
+<i class="far fa-sticky-note"></i> **The First Commandment: ** 
+Always ask `null?` as the first question in expressing any function. 
 {: .notice--info}
 {: .text-justify}
 
 
+<i class="far fa-sticky-note"></i> **The Fourth Commandment: ** 
+Always change at least one argument while recurring. It must be changed to be closer to termination. The changing argument must be tested in the termination condition: when using `cdr`, test the termination with `null?`.
+{: .notice--info}
+{: .text-justify}
 
-- Definition of `lat` function (Chp2 p16)
 
+- Definition of `member?` function (Chp2 p22)
+
+```lisp
+(def member?
+  (lambda (a lat)
+    (cond
+      ((null? lat) false)
+      (else (or (eq? (car lat) a)
+        (member? a (cdr lat)))))))
+```
+Similar to `lat` function, `member` looks at the first element `car l` in the list to check if it equals to `a`, then using the same function recursively on the other part of the list excluding first element `cdr l`.
 
 
 
