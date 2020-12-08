@@ -83,7 +83,7 @@ Ok, let's get started! Today we are going through some basic concepts in this bo
 
 Here is an example of how recursion is used almost everywhere in the function definitions:
 
-Definition of `lat` (Chp2 p16)
+- Definition of `lat` function (Chp2 p16)
 
 ```
 (define lat? 
@@ -96,19 +96,23 @@ Definition of `lat` (Chp2 p16)
 
 
 
-The idea to define `lat` function is recurion. It first takes a look at the first element in the list `car l`, if it is an atom, then we will keep using the same function `lat` on the rest of the list `cdr l`. If it's not an atom we return True `#t`.
-
-Note that the first condition `null? l` is very important because it serves as the termination condition to the recursion. The book mentioned it several time in later chapters as well.
+The idea to define `lat` function is recurion. It first takes a look at the first element in the list `car l`, if it is an atom, then we will keep using the same function `lat` on the rest of the list `cdr l`. If it's not an atom we return False `#f`.
 
 
-
-
-
-- Up Next
-
-In the part II we will talk more about recursion and lambda in this book. Stay tuned!
+<i class="far fa-sticky-note"></i> **Note:** 
+The first condition `null? l` is very important because it serves as the termination condition to the recursion. The book mentioned it several time in later chapters as well.
+{: .notice--info}
+{: .text-justify}
 
 
 
+- Definition of `lat` function (Chp2 p16)
 
+
+
+
+<i class="far fa-sticky-note"></i> **Up Next:** 
+In the part II we will talk more about recursion and lambda in this book. Stay tuned!.
+{: .notice--info}
+{: .text-justify}
 
