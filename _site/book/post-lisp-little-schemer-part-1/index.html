@@ -10,7 +10,7 @@
     <meta charset="utf-8">
 
 <!-- begin _includes/seo.html --><title>The Little Schemer Reading Note Part I - Jiajing Chen</title>
-<meta name="description" content="Recursion, recursion, and more…">
+<meta name="description" content="Recursion, recursion, and recursion… This book will break your mind!">
 
 
   <meta name="author" content="Jiajing Chen">
@@ -26,7 +26,7 @@
 <meta property="og:url" content="http://localhost:4000/book/post-lisp-little-schemer-part-1/">
 
 
-  <meta property="og:description" content="Recursion, recursion, and more…">
+  <meta property="og:description" content="Recursion, recursion, and recursion… This book will break your mind!">
 
 
 
@@ -307,13 +307,13 @@
     
       <li>
         
-          <span class="nav__sub-title">Getting Started</span>
+          <span class="nav__sub-title">Welcome</span>
         
 
         
         <ul>
           
-            <li><a href="/about/">About</a></li>
+            <li><a href="/about/">About Me</a></li>
           
         </ul>
         
@@ -321,15 +321,77 @@
     
       <li>
         
-          <span class="nav__sub-title">Content</span>
+          <span class="nav__sub-title">STAT</span>
         
 
         
         <ul>
           
-            <li><a href="/gallery/">Gallery</a></li>
+            <li><a href="/stat/post-stat110-probability/">STAT 110</a></li>
           
-            <li><a href="/second-post/">Second Post</a></li>
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          <span class="nav__sub-title">The Little Schemer</span>
+        
+
+        
+        <ul>
+          
+            <li><a href="/book/post-lisp-little-schemer-part-1/" class="active">Reading Note Part 1</a></li>
+          
+            <li><a href="/book/post-lisp-little-schemer-part-2/">Reading Note Part 2</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          <span class="nav__sub-title">Algorithms</span>
+        
+
+        
+        <ul>
+          
+            <li><a href="/post-algorithm-part-1/">DFS</a></li>
+          
+            <li><a href="/post-algorithm-part-2/">BFS</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          <span class="nav__sub-title">Data Structure</span>
+        
+
+        
+        <ul>
+          
+            <li><a href="/post-data-structure-part-1/">Linked List</a></li>
+          
+            <li><a href="/post-data-structure-part-2/">BFS</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          <span class="nav__sub-title">Git</span>
+        
+
+        
+        <ul>
+          
+            <li><a href="/git-basic-part-1/">Git Basic Part 1</a></li>
+          
+            <li><a href="/git-basic-part-2/">Git Basic Part 2</a></li>
           
         </ul>
         
@@ -346,7 +408,7 @@
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
     <meta itemprop="headline" content="The Little Schemer Reading Note Part I">
-    <meta itemprop="description" content="Recursion, recursion, and more…">
+    <meta itemprop="description" content="Recursion, recursion, and recursion… This book will break your mind!">
     <meta itemprop="datePublished" content="2020-11-20T00:00:00-05:00">
     
 
@@ -375,7 +437,7 @@
       <span class="page__meta-readtime">
         <i class="far fa-clock" aria-hidden="true"></i>
         
-          2 minute read
+          3 minute read
         
       </span>
     
@@ -387,16 +449,49 @@
 
       <section class="page__content" itemprop="text">
         
-        <p>The Little Schemer is a great book writen by Daniel P. Friedman and Matthias Felleisen. The book introduced concepts in computer science and functional programming in Scheme/Lisp. It is about <strong>recursion</strong> at its core. (Check out the cover of the book and you will find out!)</p>
+        <p><img src="/assets/images/thumbnails/The_little_schemer.jpg" alt="" /></p>
+
+<h3 id="intro">Intro</h3>
+
+<p><strong><em>The Little Schemer</em></strong> is a great book writen by Daniel P. Friedman and Matthias Felleisen. The book introduced concepts in computer science and functional programming in Scheme/Lisp. It is about <strong>recursion</strong> at its core. (Check out the cover of the book and you will find out!)</p>
 
 <p>The authors mentioned in the <a href="https://felleisen.org/matthias/BTLS-preface.html">preface</a> that:</p>
+
 <blockquote>
   <p><em>The goal of this book is to teach the reader to think recursively</em>.</p>
 </blockquote>
 
-<p>I really love the way the book is structured by asking questions from simple examples and let the readers to think and grasp the concepts along the process. I don’t know about Lisp or Scheme language beforehand but I was able to pick it up through its unique Q&amp;A style of teaching (It’s fascinating!). It’s pretty light in the first few chapters but quickly gets quite in depth. Especially chapter 9 &amp; 10.</p>
+<p>I really love the way the book is structured by asking questions from simple examples and let the readers to think and grasp the concepts along the process. I don’t know about LISP or Scheme programing language beforehand but I was able to pick it up through its unique Q&amp;A style of teaching (It’s fun and fascinating!).</p>
 
-<p>Here are some basic concepts:</p>
+<p>Here is the table of contents of <em>The Little Schemer</em>. It’s pretty light in the first few chapters but quickly gets quite in depth. Especially in last few chapter about lambda and Y-combinator.</p>
+
+<ul>
+  <li>Chapter  1: Toys</li>
+  <li>Chapter  2: Do It, Do It Again, and Again, and Again…</li>
+  <li>Chapter  3: Cons the Magnificent</li>
+  <li>Chapter  4: Numbers Games</li>
+  <li>Chapter  5: <em>Oh My Gawd</em>: It’s Full of Stars</li>
+  <li>Chapter  6: Shadows</li>
+  <li>Chapter  7: Shadows</li>
+  <li>Chapter  8: Lambda the Ultimate</li>
+  <li>Chapter  9: … and Again, and Again, and Again …</li>
+  <li>Chapter 10: What Is the Value of All of This?</li>
+</ul>
+
+<h3 id="resource-and-code">Resource and code</h3>
+
+<p>Here are some resources I found very useful when I read through the book.</p>
+
+<ul>
+  <li>the talk given by</li>
+  <li><a href="https://github.com/pkrumins/the-little-schemer">The little schemer repo</a> with code and examples in book</li>
+</ul>
+
+<p>If you want to run Scheme/LISP on your computer without a Scheme interpreter. Here is a tutorial on how to do so through jupyter notebook</p>
+
+<p>Ok, let’s get started! Today we are going through some basic concepts in this book and examples of how functions are defined using recursion.</p>
+
+<h3 id="basic-concepts">Basic concepts</h3>
 
 <ul>
   <li>Basic data types:</li>
@@ -416,19 +511,19 @@
 
 <p><code>cons</code>: concatenate between an atom and a list</p>
 
-<p><code>car l</code>: the first element in the list l</p>
+<p><code>car</code>: the first element in the list</p>
 
-<p><code>cdr</code>l: a list consists of the rest of the list l excludes its first element</p>
+<p><code>cdr</code>: a list consists of the rest of the list l excludes its first element</p>
 
-<p><code>eq?</code>:</p>
+<p><code>eq?</code>: check if two element are equal.</p>
 
-<p><code>lat?l</code>: if each S-expression in the list l is an atom</p>
+<p><code>lat?</code>: if each S-expression in the list is an atom</p>
 
-<p><code>member?a l</code> : if a is a member in l</p>
+<p><code>member? a l</code> : if a is a member in l</p>
 
-<p><code>first</code>:</p>
+<p><code>rmember? a l</code>: remove member a from list l</p>
 
-<p><code>rmember?</code>:</p>
+<h3 id="examples">Examples</h3>
 
 <p>Here is an example of how recursion is used almost everywhere in the function definitions:</p>
 

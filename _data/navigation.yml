@@ -12,14 +12,40 @@ main:
     url: /misc/
 #side bar. docs. use it by adding to the pages  nav: "docs"
 docs:
-  - title: Getting Started
+  - title: Welcome
     children:
-      - title: "About"
+      - title: "About Me"
         url: /about/
 
-  - title: Content
+  - title: STAT
     children:
-      - title: "Gallery"
-        url: /gallery/
-      - title: "Second Post"
-        url: /second-post/
+      - title: "STAT 110"
+        url: /stat/post-stat110-probability/
+
+  - title: The Little Schemer
+    children:
+      - title: "Reading Note Part 1"
+        url: /book/post-lisp-little-schemer-part-1/
+      - title: "Reading Note Part 2"
+        url: /book/post-lisp-little-schemer-part-2/
+
+  - title: Algorithms 
+    children:
+      - title: "DFS"
+        url: /post-algorithm-part-1/
+      - title: "BFS"
+        url: /post-algorithm-part-2/
+
+  - title: Data Structure 
+    children:
+      - title: "Linked List"
+        url: /post-data-structure-part-1/
+      - title: "BFS"
+        url: /post-data-structure-part-2/
+
+  - title: Git 
+    children:
+      - title: "Git Basic Part 1"
+        url: /git-basic-part-1/
+      - title: "Git Basic Part 2"
+        url: /git-basic-part-2/

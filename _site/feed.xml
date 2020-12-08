@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-12-04T18:53:04-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Jiajing Chen</title><subtitle>Personal Website</subtitle><author><name>Jiajing Chen</name></author><entry><title type="html">Intro to data structure and algorithm Part II</title><link href="http://localhost:4000/post-algorithm-part-2/" rel="alternate" type="text/html" title="Intro to data structure and algorithm Part II" /><published>2020-11-30T00:00:00-05:00</published><updated>2020-11-30T00:00:00-05:00</updated><id>http://localhost:4000/post-algorithm-part-2</id><content type="html" xml:base="http://localhost:4000/post-algorithm-part-2/">&lt;p class=&quot;notice--primary&quot;&gt;&lt;em&gt;This is Part II of the intro to data structure and algo series. See others here.&lt;/em&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-12-07T23:34:30-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Jiajing Chen</title><subtitle>Personal Website</subtitle><author><name>Jiajing Chen</name></author><entry><title type="html">Intro to data structure and algorithm Part II</title><link href="http://localhost:4000/post-algorithm-part-2/" rel="alternate" type="text/html" title="Intro to data structure and algorithm Part II" /><published>2020-11-30T00:00:00-05:00</published><updated>2020-11-30T00:00:00-05:00</updated><id>http://localhost:4000/post-algorithm-part-2</id><content type="html" xml:base="http://localhost:4000/post-algorithm-part-2/">&lt;p class=&quot;notice--primary&quot;&gt;&lt;em&gt;This is Part II of the intro to data structure and algo series. See others here.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt; 
  &lt;/p&gt;
 
@@ -62,21 +62,53 @@
         curr_path = []
         dfs(0, curr_path, res)
         return res
-
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;ul&gt;
   &lt;li&gt;BFS&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Jiajing Chen</name></author><category term="algorithm" /><category term="data structure" /><category term="dfs" /><category term="bfs" /><category term="graph" /><summary type="html">DFS and backtracking</summary></entry><entry><title type="html">The Little Schemer Reading Note Part I</title><link href="http://localhost:4000/book/post-lisp-little-schemer-part-1/" rel="alternate" type="text/html" title="The Little Schemer Reading Note Part I" /><published>2020-11-20T00:00:00-05:00</published><updated>2020-11-20T00:00:00-05:00</updated><id>http://localhost:4000/book/post-lisp-little-schemer-part-1</id><content type="html" xml:base="http://localhost:4000/book/post-lisp-little-schemer-part-1/">&lt;p&gt;The Little Schemer is a great book writen by Daniel P. Friedman and Matthias Felleisen. The book introduced concepts in computer science and functional programming in Scheme/Lisp. It is about &lt;strong&gt;recursion&lt;/strong&gt; at its core. (Check out the cover of the book and you will find out!)&lt;/p&gt;
+&lt;/ul&gt;</content><author><name>Jiajing Chen</name></author><category term="algorithm" /><category term="data structure" /><category term="dfs" /><category term="bfs" /><category term="graph" /><summary type="html">DFS and backtracking</summary></entry><entry><title type="html">The Little Schemer Reading Note Part I</title><link href="http://localhost:4000/book/post-lisp-little-schemer-part-1/" rel="alternate" type="text/html" title="The Little Schemer Reading Note Part I" /><published>2020-11-20T00:00:00-05:00</published><updated>2020-11-20T00:00:00-05:00</updated><id>http://localhost:4000/book/post-lisp-little-schemer-part-1</id><content type="html" xml:base="http://localhost:4000/book/post-lisp-little-schemer-part-1/">&lt;p&gt;&lt;img src=&quot;/assets/images/thumbnails/The_little_schemer.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;intro&quot;&gt;Intro&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;The Little Schemer&lt;/em&gt;&lt;/strong&gt; is a great book writen by Daniel P. Friedman and Matthias Felleisen. The book introduced concepts in computer science and functional programming in Scheme/Lisp. It is about &lt;strong&gt;recursion&lt;/strong&gt; at its core. (Check out the cover of the book and you will find out!)&lt;/p&gt;
 
 &lt;p&gt;The authors mentioned in the &lt;a href=&quot;https://felleisen.org/matthias/BTLS-preface.html&quot;&gt;preface&lt;/a&gt; that:&lt;/p&gt;
+
 &lt;blockquote&gt;
   &lt;p&gt;&lt;em&gt;The goal of this book is to teach the reader to think recursively&lt;/em&gt;.&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;I really love the way the book is structured by asking questions from simple examples and let the readers to think and grasp the concepts along the process. I don’t know about Lisp or Scheme language beforehand but I was able to pick it up through its unique Q&amp;amp;A style of teaching (It’s fascinating!). It’s pretty light in the first few chapters but quickly gets quite in depth. Especially chapter 9 &amp;amp; 10.&lt;/p&gt;
+&lt;p&gt;I really love the way the book is structured by asking questions from simple examples and let the readers to think and grasp the concepts along the process. I don’t know about LISP or Scheme programing language beforehand but I was able to pick it up through its unique Q&amp;amp;A style of teaching (It’s fun and fascinating!).&lt;/p&gt;
 
-&lt;p&gt;Here are some basic concepts:&lt;/p&gt;
+&lt;p&gt;Here is the table of contents of &lt;em&gt;The Little Schemer&lt;/em&gt;. It’s pretty light in the first few chapters but quickly gets quite in depth. Especially in last few chapter about lambda and Y-combinator.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Chapter  1: Toys&lt;/li&gt;
+  &lt;li&gt;Chapter  2: Do It, Do It Again, and Again, and Again…&lt;/li&gt;
+  &lt;li&gt;Chapter  3: Cons the Magnificent&lt;/li&gt;
+  &lt;li&gt;Chapter  4: Numbers Games&lt;/li&gt;
+  &lt;li&gt;Chapter  5: &lt;em&gt;Oh My Gawd&lt;/em&gt;: It’s Full of Stars&lt;/li&gt;
+  &lt;li&gt;Chapter  6: Shadows&lt;/li&gt;
+  &lt;li&gt;Chapter  7: Shadows&lt;/li&gt;
+  &lt;li&gt;Chapter  8: Lambda the Ultimate&lt;/li&gt;
+  &lt;li&gt;Chapter  9: … and Again, and Again, and Again …&lt;/li&gt;
+  &lt;li&gt;Chapter 10: What Is the Value of All of This?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;resource-and-code&quot;&gt;Resource and code&lt;/h3&gt;
+
+&lt;p&gt;Here are some resources I found very useful when I read through the book.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;the talk given by&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/pkrumins/the-little-schemer&quot;&gt;The little schemer repo&lt;/a&gt; with code and examples in book&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;If you want to run Scheme/LISP on your computer without a Scheme interpreter. Here is a tutorial on how to do so through jupyter notebook&lt;/p&gt;
+
+&lt;p&gt;Ok, let’s get started! Today we are going through some basic concepts in this book and examples of how functions are defined using recursion.&lt;/p&gt;
+
+&lt;h3 id=&quot;basic-concepts&quot;&gt;Basic concepts&lt;/h3&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Basic data types:&lt;/li&gt;
@@ -96,19 +128,19 @@
 
 &lt;p&gt;&lt;code&gt;cons&lt;/code&gt;: concatenate between an atom and a list&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;car l&lt;/code&gt;: the first element in the list l&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;car&lt;/code&gt;: the first element in the list&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;cdr&lt;/code&gt;l: a list consists of the rest of the list l excludes its first element&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;cdr&lt;/code&gt;: a list consists of the rest of the list l excludes its first element&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;eq?&lt;/code&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;eq?&lt;/code&gt;: check if two element are equal.&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;lat?l&lt;/code&gt;: if each S-expression in the list l is an atom&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;lat?&lt;/code&gt;: if each S-expression in the list is an atom&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;member?a l&lt;/code&gt; : if a is a member in l&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;member? a l&lt;/code&gt; : if a is a member in l&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;first&lt;/code&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;rmember? a l&lt;/code&gt;: remove member a from list l&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;rmember?&lt;/code&gt;:&lt;/p&gt;
+&lt;h3 id=&quot;examples&quot;&gt;Examples&lt;/h3&gt;
 
 &lt;p&gt;Here is an example of how recursion is used almost everywhere in the function definitions:&lt;/p&gt;
 
@@ -130,7 +162,7 @@
   &lt;li&gt;Up Next&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;In the part II we will talk more about recursion and lambda in this book. Stay tuned!&lt;/p&gt;</content><author><name>Jiajing Chen</name></author><category term="book" /><category term="recursion" /><category term="lisp" /><category term="scheme" /><category term="book" /><summary type="html">Recursion, recursion, and more...</summary></entry><entry><title type="html">STAT110: The Probability course you don’t want to miss</title><link href="http://localhost:4000/stat/post-stat110-probability/" rel="alternate" type="text/html" title="STAT110: The Probability course you don't want to miss" /><published>2018-05-30T00:00:00-04:00</published><updated>2018-05-30T00:00:00-04:00</updated><id>http://localhost:4000/stat/post-stat110-probability</id><content type="html" xml:base="http://localhost:4000/stat/post-stat110-probability/">&lt;p&gt;I have always been fascinated by probability and statistics ever since I was in high school. I have taken a few courses in probability from school and online courses. But I would say that Joe’s probability course is one of my favorite courses of all time! It helped me gasp a deeper understanding in distribution and conditional probability. It also helped me connect the dots between different distributions and their applications.&lt;/p&gt;
+&lt;p&gt;In the part II we will talk more about recursion and lambda in this book. Stay tuned!&lt;/p&gt;</content><author><name>Jiajing Chen</name></author><category term="book" /><category term="recursion" /><category term="lisp" /><category term="scheme" /><category term="book" /><summary type="html">Recursion, recursion, and recursion... This book will break your mind!</summary></entry><entry><title type="html">STAT110: The Probability course you don’t want to miss</title><link href="http://localhost:4000/stat/post-stat110-probability/" rel="alternate" type="text/html" title="STAT110: The Probability course you don't want to miss" /><published>2018-05-30T00:00:00-04:00</published><updated>2018-05-30T00:00:00-04:00</updated><id>http://localhost:4000/stat/post-stat110-probability</id><content type="html" xml:base="http://localhost:4000/stat/post-stat110-probability/">&lt;p&gt;I have always been fascinated by probability and statistics ever since I was in high school. I have taken a few courses in probability from school and online courses. But I would say that Joe’s probability course is one of my favorite courses of all time! It helped me gasp a deeper understanding in distribution and conditional probability. It also helped me connect the dots between different distributions and their applications.&lt;/p&gt;
 
 &lt;p&gt;Early this year, I have been watching the videos of STAT 110 Probability by Professor Joe Blitzstein on &lt;a href=&quot;https://www.youtube.com/playlist?list=PL2SOU6wwxB0uwwH80KTQ6ht66KWxbzTIo&quot;&gt;Youtube&lt;/a&gt; for 3 times. I almost listened to it before I went to bed every night!&lt;/p&gt;
 

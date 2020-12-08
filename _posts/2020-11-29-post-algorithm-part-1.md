@@ -38,7 +38,6 @@ class Solution:
         curr_path = []
         dfs(0, curr_path, res)
         return res
-
 ```
 
 
