@@ -14,7 +14,7 @@ I am data scientist who develops machine learning and statistical models that pr
 
 Interests
 ============
-I am interested in the state-of-art model development in recommendation system, deep learning, and NLP (Transformer, BERT). I like coding and solving challenging problems.
+I am interested in the state-of-the-art model development in recommendation system, deep learning, and NLP (Transformer, BERT). I like coding and solving challenging problems.
 
 In my spare time I like reading, drawing, and spending time outdoors.
 
