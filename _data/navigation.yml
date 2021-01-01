@@ -1,8 +1,6 @@
 # main links
 main:
-  - title: "Home"
-    url: /
-  - title: "About Me"
+  - title: "About"
     url: /about/
   - title: "Posts"
     url: /posts/
@@ -14,7 +12,7 @@ main:
 docs:
   - title: Welcome
     children:
-      - title: "About Me"
+      - title: "About"
         url: /about/
 
   - title: STAT
@@ -25,9 +23,14 @@ docs:
   - title: The Little Schemer
     children:
       - title: "Reading Note Part 1"
-        url: /book/post-lisp-little-schemer-part-1/
-      - title: "Reading Note Part 2"
-        url: /book/post-lisp-little-schemer-part-2/
+        url: /scheme/post-lisp-little-schemer-part-1/
+
+  - title: NLP
+    children:
+      - title: "NLP Learning Resource"
+        url: /nlp-part-1/
+      - title: "Note"
+        url: /nlp-part-2/
 
   - title: Algorithms 
     children:
@@ -36,12 +39,6 @@ docs:
       - title: "BFS"
         url: /post-algorithm-part-2/
 
-  - title: Data Structure 
-    children:
-      - title: "Linked List"
-        url: /post-data-structure-part-1/
-      - title: "BFS"
-        url: /post-data-structure-part-2/
 
   - title: Git 
     children:
