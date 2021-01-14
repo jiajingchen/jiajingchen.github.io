@@ -2,7 +2,7 @@
 layout: single
 title: "About"
 permalink: /about/
-comments: true
+comments: false
 author_profile: true
 sidebar:
   nav: "docs"
