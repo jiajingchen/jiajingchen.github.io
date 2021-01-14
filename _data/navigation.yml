@@ -18,18 +18,13 @@ docs:
   - title: STAT
     children:
       - title: "STAT 110"
-        url: /stat/post-stat110-probability/
-
-  - title: The Little Schemer
-    children:
-      - title: "Reading Note Part 1"
-        url: /scheme/post-lisp-little-schemer-part-1/
+        url: /stat/stat110-probability/
 
   - title: NLP
     children:
-      - title: "NLP Learning Resource"
+      - title: "Summary and Resources"
         url: /nlp/nlp-part-1/
-      - title: "Word Embeddings, Word2Vec"
+      - title: "Word Embeddings"
         url: /nlp/nlp-part-2/
       - title: "Attention"
         url: /nlp/nlp-part-2/
@@ -37,15 +32,21 @@ docs:
   - title: Algorithms 
     children:
       - title: "DFS"
-        url: /algo/post-algorithm-part-1/
+        url: /algo/algorithm-part-1/
       - title: "BFS"
-        url: /algo/post-algorithm-part-2/
+        url: /algo/algorithm-part-2/
 
   - title: RecSys
     children:
-      - title: "RecSys History & Overview"
+      - title: "RecSys Overview"
         url: /recsys/recommendation_system_overview/
 
+
+  - title: "The Little Schemer"
+    children:
+      - title: "Reading Note"
+        url: /scheme/lisp-little-schemer-part-1/
+        
 
   - title: Git 
     children:
