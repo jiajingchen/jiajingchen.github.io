@@ -5,7 +5,7 @@ header:
   teaser: /assets/images/thumbnails/logo-data-structures-algorithms.png
 excerpt: "DFS and backtracking "
 date:   2020-11-20
-category: 
+category: algo
 tags: [algorithm, data structure, dfs, bfs, graph]
 comments: true
 sidebar:

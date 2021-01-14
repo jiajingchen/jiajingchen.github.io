@@ -5,7 +5,7 @@ header:
   teaser: /assets/images/thumbnails/logo-data-structures-algorithms.png
 excerpt: "BFS and level order traversal using queue"
 date:   2020-11-30
-category: 
+category: algo
 tags: [algorithm, data structure, dfs, bfs, graph]
 comments: true
 sidebar:
