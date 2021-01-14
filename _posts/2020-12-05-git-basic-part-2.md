@@ -1,0 +1,23 @@
+---
+layout: single
+title:  "The Little Schemer Reading Note Part I"
+header:
+  teaser: /assets/images/thumbnails/The_little_schemer.jpg
+excerpt: "Git Part 2..."
+date:   2020-11-20
+category: git
+tags: [git, branch]
+comments: true
+sidebar:
+  nav: "docs"
+---
+
+
+- Up Next
+
+In the part II we will talk more about Git. Stay tuned!
+
+
+
+
+
