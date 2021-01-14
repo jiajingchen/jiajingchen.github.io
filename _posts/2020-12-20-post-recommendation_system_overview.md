@@ -5,8 +5,8 @@ header:
   teaser: /assets/images/thumbnails/The_little_schemer.jpg
 excerpt: "A overview of Recommendation System..."
 date:   2020-12-20
-category: book
-tags: [recsys, ]
+category: recsys
+tags: [recsys, deep learning ]
 comments: true
 sidebar:
   nav: "docs"

@@ -10,7 +10,7 @@
     <meta charset="utf-8">
 
 <!-- begin _includes/seo.html --><title>The Little Schemer Reading Note Part I - Jiajing Chen</title>
-<meta name="description" content="Recursion, recursion, and recursion… This book will break your mind!">
+<meta name="description" content="Recursion, recursion, and recursion… This book will blow your mind!">
 
 
   <meta name="author" content="Jiajing Chen">
@@ -23,10 +23,10 @@
 <meta property="og:locale" content="en">
 <meta property="og:site_name" content="Jiajing Chen">
 <meta property="og:title" content="The Little Schemer Reading Note Part I">
-<meta property="og:url" content="http://localhost:4000/book/post-lisp-little-schemer-part-1/">
+<meta property="og:url" content="http://localhost:4000/scheme/post-lisp-little-schemer-part-1/">
 
 
-  <meta property="og:description" content="Recursion, recursion, and recursion… This book will break your mind!">
+  <meta property="og:description" content="Recursion, recursion, and recursion… This book will blow your mind!">
 
 
 
@@ -47,7 +47,7 @@
   
 
 
-<link rel="canonical" href="http://localhost:4000/book/post-lisp-little-schemer-part-1/">
+<link rel="canonical" href="http://localhost:4000/scheme/post-lisp-little-schemer-part-1/">
 
 
 
@@ -137,9 +137,7 @@
           
         </a>
         <ul class="visible-links"><li class="masthead__menu-item">
-              <a href="/">Home</a>
-            </li><li class="masthead__menu-item">
-              <a href="/about/">About Me</a>
+              <a href="/about/">About</a>
             </li><li class="masthead__menu-item">
               <a href="/posts/">Posts</a>
             </li><li class="masthead__menu-item">
@@ -313,7 +311,7 @@
         
         <ul>
           
-            <li><a href="/about/">About Me</a></li>
+            <li><a href="/about/">About</a></li>
           
         </ul>
         
@@ -341,9 +339,23 @@
         
         <ul>
           
-            <li><a href="/book/post-lisp-little-schemer-part-1/" class="active">Reading Note Part 1</a></li>
+            <li><a href="/scheme/post-lisp-little-schemer-part-1/" class="active">Reading Note Part 1</a></li>
           
-            <li><a href="/book/post-lisp-little-schemer-part-2/">Reading Note Part 2</a></li>
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          <span class="nav__sub-title">NLP</span>
+        
+
+        
+        <ul>
+          
+            <li><a href="/post-nlp-part-1/">NLP Learning</a></li>
+          
+            <li><a href="/post-nlp-part-2/">Note</a></li>
           
         </ul>
         
@@ -360,22 +372,6 @@
             <li><a href="/post-algorithm-part-1/">DFS</a></li>
           
             <li><a href="/post-algorithm-part-2/">BFS</a></li>
-          
-        </ul>
-        
-      </li>
-    
-      <li>
-        
-          <span class="nav__sub-title">Data Structure</span>
-        
-
-        
-        <ul>
-          
-            <li><a href="/post-data-structure-part-1/">Linked List</a></li>
-          
-            <li><a href="/post-data-structure-part-2/">BFS</a></li>
           
         </ul>
         
@@ -408,7 +404,7 @@
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
     <meta itemprop="headline" content="The Little Schemer Reading Note Part I">
-    <meta itemprop="description" content="Recursion, recursion, and recursion… This book will break your mind!">
+    <meta itemprop="description" content="Recursion, recursion, and recursion… This book will blow your mind!">
     <meta itemprop="datePublished" content="2020-11-20T00:00:00-05:00">
     
 
@@ -437,7 +433,7 @@
       <span class="page__meta-readtime">
         <i class="far fa-clock" aria-hidden="true"></i>
         
-          3 minute read
+          6 minute read
         
       </span>
     
@@ -451,11 +447,11 @@
         
         <p><img src="/assets/images/thumbnails/The_little_schemer.jpg" alt="" /></p>
 
-<h3 id="intro">Intro</h3>
+<h2 id="introduction">Introduction</h2>
 
 <p><strong><em>The Little Schemer</em></strong> is a great book writen by Daniel P. Friedman and Matthias Felleisen. The book introduced concepts in computer science and functional programming in Scheme/Lisp. It is about <strong>recursion</strong> at its core. (Check out the cover of the book and you will find out!)</p>
 
-<p>The authors mentioned in the <a href="https://felleisen.org/matthias/BTLS-preface.html">preface</a> that:</p>
+<p>The authors mentioned in the <a href="https://felleisen.org/matthias/BTLS-preface.html"><em>preface</em></a> that:</p>
 
 <blockquote>
   <p><em>The goal of this book is to teach the reader to think recursively</em>.</p>
@@ -478,58 +474,62 @@
   <li>Chapter 10: What Is the Value of All of This?</li>
 </ul>
 
-<h3 id="resource-and-code">Resource and code</h3>
+<h2 id="resource-to-get-started">Resource to get started</h2>
 
 <p>Here are some resources I found very useful when I read through the book.</p>
 
 <ul>
-  <li>the talk given by</li>
-  <li><a href="https://github.com/pkrumins/the-little-schemer">The little schemer repo</a> with code and examples in book</li>
+  <li>
+    <p>Two talks on YouTube given by <a href="https://www.youtube.com/watch?v=VxINoKFm-S4">David Christiansen</a> and <a href="https://www.youtube.com/watch?v=tA1clbGDczI&amp;t=3860s">Andy Balaam</a>.</p>
+  </li>
+  <li>
+    <p><a href="https://github.com/pkrumins/the-little-schemer">The little schemer repo</a> with code and examples in book</p>
+  </li>
 </ul>
 
-<p>If you want to run Scheme/LISP on your computer without a Scheme interpreter. Here is a tutorial on how to do so through jupyter notebook</p>
+<p>If you want to run Scheme/LISP on your computer without a Scheme interpreter. <a href="https://www.viget.com/articles/the-little-schemer-will-expand-blow-your-mind/">Here</a> is a tutorial on how to do so through REPL.</p>
 
-<p>Ok, let’s get started! Today we are going through some basic concepts in this book and examples of how functions are defined using recursion.</p>
+<h2 id="basic-concepts">Basic concepts</h2>
 
-<h3 id="basic-concepts">Basic concepts</h3>
+<p>Ok, let’s get started! Today we are going through some basic concepts in the first few chapters and some great examples about how functions are defined using recursion. The first chapter talks about basic data types and operation. The second chapter introduces two recursive functions using those basic data types &amp; operations.</p>
 
-<ul>
-  <li>Basic data types:</li>
-</ul>
+<h3 id="basic-data-types">Basic data types:</h3>
 
-<p><code>atom</code>: atom is the basic element</p>
+<p><code>atom</code>: The atom is the basic element in Scheme. An atom is a constant whose name is its own value.</p>
 
-<p><code>list</code>: list</p>
+<p><code>list</code>: We use parentheses <code>()</code> to specify list of values (S-expressions). For example, <code>(a b c)</code> is a list, <code>((a b c) x y z)</code> is also a list.</p>
 
-<p><code>S-expression</code>: basic element,</p>
+<p><code>S-expression</code>: An S-expression is either an atom or a collection of S-expressions enclosed in parentheses. The second form of S-expressions are known as lists.</p>
 
-<p><code>tup</code>: tuple, list of number</p>
+<h3 id="basic-functions">Basic functions:</h3>
 
-<ul>
-  <li>Basic operations:</li>
-</ul>
+<p><code>car l</code>: return the first element in the list. E.g. <code>car (a b c)</code> will give you <code>a</code>. The primitive car is defined only for non-empty lists.</p>
 
-<p><code>cons</code>: concatenate between an atom and a list</p>
+<p><code>cdr l</code>: return a list consists of the rest of the list excluding its first element. The primitive cdr is defined only for non-empty lists. The cdr of any non-empty list will always return another list. E.g. <code>cdr (a b c)</code> will give you <code>(b c)</code>.</p>
 
-<p><code>car</code>: the first element in the list</p>
+<p><code>cons a l</code>: Concatenate between an atom <code>a</code> and a list <code>l</code>. The primitive cons takes two arguments and the second argument to cons must be a list. The result is also a list. E.g. <code>cons a (b c)</code> will give you <code>(a b c)</code>.</p>
 
-<p><code>cdr</code>: a list consists of the rest of the list l excludes its first element</p>
+<p><code>null? l</code> return ture if list is empty. The primitive null? is defined only for lists.</p>
 
-<p><code>eq?</code>: check if two element are equal.</p>
+<p><code>eq? a b</code>: check if two element are equal.</p>
 
-<p><code>lat?</code>: if each S-expression in the list is an atom</p>
+<p><code>lat? l</code>: check if each S-expression in the list is an atom</p>
 
-<p><code>member? a l</code> : if a is a member in l</p>
+<p><code>member? a l</code> : check if a is a member in l</p>
 
-<p><code>rmember? a l</code>: remove member a from list l</p>
+<p><code>rmember? a l</code>: remove the first occurance of the atom <code>a</code> from the  list <code>l</code>. E.g <code>rember b (a b c b c)</code> will return <code>(a c b c)</code>.</p>
 
-<h3 id="examples">Examples</h3>
+<p><img src="/assets/images/post_image/little_schemer_1.jpg" alt="" /></p>
+
+<h2 id="examples-using-recursion">Examples using recursion</h2>
 
 <p>Here is an example of how recursion is used almost everywhere in the function definitions:</p>
 
-<p>Definition of <code>lat</code> (Chp2 p16)</p>
+<ul>
+  <li>Definition of <code>lat</code> function (Chp2 p16)</li>
+</ul>
 
-<pre><code>(define lat? 
+<pre><code class="language-lisp">(define lat? 
  (lambda (l)
   (cond
    ((null? l) #t )
@@ -537,16 +537,60 @@
       (else #f))))
 </code></pre>
 
-<p>The idea to define <code>lat</code> function is recurion. It first takes a look at the first element in the list <code>car l</code>, if it is an atom, then we will keep using the same function <code>lat</code> on the rest of the list <code>cdr l</code>. If it’s not an atom we return True <code>#t</code>.</p>
-
-<p>Note that the first condition <code>null? l</code> is very important because it serves as the termination condition to the recursion. The book mentioned it several time in later chapters as well.</p>
+<p>The idea to define <code>lat</code> function is recurion. It first takes a look at the first element in the list <code>car l</code>, if it is an atom, then we will keep using the same function <code>lat</code> on the rest of the list <code>cdr l</code>. If it’s not an atom we return False <code>#f</code>.</p>
 
 <ul>
-  <li>Up Next</li>
+  <li>Definition of <code>member?</code> function (Chp2 p22)</li>
 </ul>
 
-<p>In the part II we will talk more about recursion and lambda in this book. Stay tuned!</p>
+<pre><code class="language-lisp">(def member?
+  (lambda (a lat)
+    (cond
+      ((null? lat) false)
+      (else (or (eq? (car lat) a)
+        (member? a (cdr lat)))))))
+</code></pre>
 
+<p>Similar to <code>lat</code> function, <code>member</code> looks at the first element <code>car l</code> in the list to check if it equals to <code>a</code>, then using the same function recursively on the other part of the list excluding first element <code>cdr l</code>.</p>
+
+<p>Note that the first condition <code>null?</code> is very important because it serves as the <strong>termination condition</strong> to the recursion. It’s so important that it’s listed as the very first <strong>commandment</strong> in the book (There are 10 commandments in the book and we will talked about it later).</p>
+
+<p class="notice--info text-justify"><i class="far fa-sticky-note"></i> <strong>The First Commandment:</strong> 
+Always ask <code>null?</code> as the first question in expressing any function.</p>
+
+<p>Also, by recursively using the same function on <code>cdr lat</code>, we are reducing the size of the input in this recursion. Each round of calling the function, we are shrinking the size of the list by 1 and getting closer to the termination condition <code>null?</code>. This is also covered in the fourth  <strong>commandment</strong>:</p>
+
+<p class="notice--info text-justify"><i class="far fa-sticky-note"></i> <strong>The Fourth Commandment:</strong> 
+Always change at least one argument while recurring. It must be changed to be closer to termination. The changing argument must be tested in the termination condition: when using <code>cdr</code>, test the termination with <code>null?</code>.</p>
+
+<ul>
+  <li>A little quiz here: 
+By using recursion, can you write your own definition for function <code>rember</code> (remove the first occurance of the given atom from the given list)?</li>
+</ul>
+
+<p>Here is the answer:</p>
+
+<pre><code class="language-lisp">(define rember
+  (lambda (a lat)
+    (cond
+      ((null? lat) (quote()))
+      ((eq? (car lat) a) (cdr lat))
+      (else (cons (car lat)
+                  (rember a (cdr lat)))))))
+</code></pre>
+
+<p class="notice--info text-justify"><i class="far fa-sticky-note"></i> <strong>Up Next:</strong> 
+In the part II we will talk more about recursion and lambda in this book. Stay tuned and may the recursion be with you!</p>
+
+<p><img src="/assets/images/post_image/may_the_recursion_be_with_u.png" alt="" /></p>
+
+<h3 id="references">References</h3>
+
+<p><a href="https://github.com/pkrumins/the-little-schemer">The little schemer repo</a></p>
+
+<p><a href="https://github.com/andybp85/hyLittleSchemer">The Little Schemer in Hy repo</a></p>
+
+<p><a href="https://www.viget.com/articles/the-little-schemer-will-expand-blow-your-mind/">A post about The Little Schemer</a></p>
 
         
       </section>
@@ -600,7 +644,7 @@
     
       
       
-      <a href="/categories/#book" class="page__taxonomy-item" rel="tag">book</a>
+      <a href="/categories/#scheme" class="page__taxonomy-item" rel="tag">scheme</a>
     
     </span>
   </p>
@@ -617,11 +661,11 @@
     <h4 class="page__share-title">Share on</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?text=The+Little+Schemer+Reading+Note+Part+I%20http%3A%2F%2Flocalhost%3A4000%2Fbook%2Fpost-lisp-little-schemer-part-1%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=The+Little+Schemer+Reading+Note+Part+I%20http%3A%2F%2Flocalhost%3A4000%2Fscheme%2Fpost-lisp-little-schemer-part-1%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fbook%2Fpost-lisp-little-schemer-part-1%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fscheme%2Fpost-lisp-little-schemer-part-1%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Fbook%2Fpost-lisp-little-schemer-part-1%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Fscheme%2Fpost-lisp-little-schemer-part-1%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
 
@@ -656,12 +700,12 @@
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-        <img src="/assets/images/thumbnails/logo-data-structures-algorithms.png" alt="">
+        <img src="/assets/images/thumbnails/NLP_image.jpg" alt="">
       </div>
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/post-algorithm-part-2/" rel="permalink">Intro to data structure and algorithm Part II
+        <a href="/nlp/nlp-part-3/" rel="permalink">Attention
 </a>
       
     </h2>
@@ -672,7 +716,7 @@
       
       <span class="page__meta-date">
         <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>
-        <time datetime="2020-11-30T00:00:00-05:00">November 30, 2020</time>
+        <time datetime="2021-01-13T00:00:00-05:00">January 13, 2021</time>
       </span>
     
 
@@ -692,7 +736,7 @@
   </p>
 
 
-    <p class="archive__item-excerpt" itemprop="description">BFS and level order traversal using queue
+    <p class="archive__item-excerpt" itemprop="description">Attention please!
 </p>
   </article>
 </div>
@@ -706,12 +750,12 @@
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-        <img src="/assets/images/thumbnails/logo-data-structures-algorithms.png" alt="">
+        <img src="/assets/images/thumbnails/NLP_image.jpg" alt="">
       </div>
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/post-algorithm-part-1/" rel="permalink">Intro to data structure and algorithm Part I
+        <a href="/nlp/nlp-part-2/" rel="permalink">NLP
 </a>
       
     </h2>
@@ -722,57 +766,7 @@
       
       <span class="page__meta-date">
         <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>
-        <time datetime="2020-11-20T00:00:00-05:00">November 20, 2020</time>
-      </span>
-    
-
-    <span class="page__meta-sep"></span>
-
-    
-      
-      
-
-      <span class="page__meta-readtime">
-        <i class="far fa-fw fa-clock" aria-hidden="true"></i>
-        
-          less than 1 minute read
-        
-      </span>
-    
-  </p>
-
-
-    <p class="archive__item-excerpt" itemprop="description">DFS and backtracking
-</p>
-  </article>
-</div>
-
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-      <div class="archive__item-teaser">
-        <img src="/assets/images/thumbnails/stat110logo.jpg" alt="">
-      </div>
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/stat/post-stat110-probability/" rel="permalink">STAT110: The Probability course you don’t want to miss
-</a>
-      
-    </h2>
-    
-
-  <p class="page__meta">
-    
-      
-      <span class="page__meta-date">
-        <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>
-        <time datetime="2018-05-30T00:00:00-04:00">May 30, 2018</time>
+        <time datetime="2021-01-03T00:00:00-05:00">January 3, 2021</time>
       </span>
     
 
@@ -792,7 +786,107 @@
   </p>
 
 
-    <p class="archive__item-excerpt" itemprop="description">STAT110 launched on EdX!
+    <p class="archive__item-excerpt" itemprop="description">Word Embeddings
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="/assets/images/thumbnails/NLP_image.jpg" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/nlp/nlp-part-1/" rel="permalink">NLP
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2020-12-30T00:00:00-05:00">December 30, 2020</time>
+      </span>
+    
+
+    <span class="page__meta-sep"></span>
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-fw fa-clock" aria-hidden="true"></i>
+        
+          3 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Some resource for learning NLP
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="/assets/images/thumbnails/The_little_schemer.jpg" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/book/post-recommendation_system_overview/" rel="permalink">Recommendation System Overview
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2020-12-20T00:00:00-05:00">December 20, 2020</time>
+      </span>
+    
+
+    <span class="page__meta-sep"></span>
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-fw fa-clock" aria-hidden="true"></i>
+        
+          less than 1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">A overview of Recommendation System…
 </p>
   </article>
 </div>
@@ -850,7 +944,7 @@
   </ul>
 </div>
 
-<div class="page__footer-copyright">&copy; 2020 Jiajing Chen. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+<div class="page__footer-copyright">&copy; 2021 Jiajing Chen. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
 
       </footer>
     </div>
@@ -871,8 +965,8 @@
     
   <script>
     var disqus_config = function () {
-      this.page.url = "http://localhost:4000/book/post-lisp-little-schemer-part-1/";  /* Replace PAGE_URL with your page's canonical URL variable */
-      this.page.identifier = "/book/post-lisp-little-schemer-part-1"; /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
+      this.page.url = "http://localhost:4000/scheme/post-lisp-little-schemer-part-1/";  /* Replace PAGE_URL with your page's canonical URL variable */
+      this.page.identifier = "/scheme/post-lisp-little-schemer-part-1"; /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
     };
     (function() { /* DON'T EDIT BELOW THIS LINE */
       var d = document, s = d.createElement('script');

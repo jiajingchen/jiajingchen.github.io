@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "The Little Schemer Reading Note Part I"
+title:  "Git Basic Part II"
 header:
   teaser: /assets/images/thumbnails/The_little_schemer.jpg
 excerpt: "Git Part 2..."

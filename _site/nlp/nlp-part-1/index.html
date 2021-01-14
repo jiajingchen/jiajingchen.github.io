@@ -9,8 +9,8 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Intro to data structure and algorithm Part I - Jiajing Chen</title>
-<meta name="description" content="DFS and backtracking">
+<!-- begin _includes/seo.html --><title>NLP  - Jiajing Chen</title>
+<meta name="description" content="Some resource for learning NLP">
 
 
   <meta name="author" content="Jiajing Chen">
@@ -22,32 +22,32 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="en">
 <meta property="og:site_name" content="Jiajing Chen">
-<meta property="og:title" content="Intro to data structure and algorithm Part I">
-<meta property="og:url" content="http://localhost:4000/post-algorithm-part-1/">
+<meta property="og:title" content="NLP">
+<meta property="og:url" content="http://localhost:4000/nlp/nlp-part-1/">
 
 
-  <meta property="og:description" content="DFS and backtracking">
-
-
-
-  <meta property="og:image" content="http://localhost:4000/assets/images/thumbnails/logo-data-structures-algorithms.png">
+  <meta property="og:description" content="Some resource for learning NLP">
 
 
 
-
-
-  <meta property="article:published_time" content="2020-11-20T00:00:00-05:00">
+  <meta property="og:image" content="http://localhost:4000/assets/images/thumbnails/NLP_image.jpg">
 
 
 
 
 
-  
+  <meta property="article:published_time" content="2020-12-30T00:00:00-05:00">
+
+
+
+
 
   
 
+  
 
-<link rel="canonical" href="http://localhost:4000/post-algorithm-part-1/">
+
+<link rel="canonical" href="http://localhost:4000/nlp/nlp-part-1/">
 
 
 
@@ -369,7 +369,7 @@
         
         <ul>
           
-            <li><a href="/post-algorithm-part-1/" class="active">DFS</a></li>
+            <li><a href="/post-algorithm-part-1/">DFS</a></li>
           
             <li><a href="/post-algorithm-part-2/">BFS</a></li>
           
@@ -403,15 +403,15 @@
 
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Intro to data structure and algorithm Part I">
-    <meta itemprop="description" content="DFS and backtracking">
-    <meta itemprop="datePublished" content="2020-11-20T00:00:00-05:00">
+    <meta itemprop="headline" content="NLP">
+    <meta itemprop="description" content="Some resource for learning NLP">
+    <meta itemprop="datePublished" content="2020-12-30T00:00:00-05:00">
     
 
     <div class="page__inner-wrap">
       
         <header>
-          <h1 id="page-title" class="page__title" itemprop="headline">Intro to data structure and algorithm Part I
+          <h1 id="page-title" class="page__title" itemprop="headline">NLP
 </h1>
           
 
@@ -420,7 +420,7 @@
       
       <span class="page__meta-date">
         <i class="far fa-calendar-alt" aria-hidden="true"></i>
-        <time datetime="2020-11-20T00:00:00-05:00">November 20, 2020</time>
+        <time datetime="2020-12-30T00:00:00-05:00">December 30, 2020</time>
       </span>
     
 
@@ -433,7 +433,7 @@
       <span class="page__meta-readtime">
         <i class="far fa-clock" aria-hidden="true"></i>
         
-          1 minute read
+          3 minute read
         
       </span>
     
@@ -445,59 +445,120 @@
 
       <section class="page__content" itemprop="text">
         
-        <p class="notice--primary"><em>Today we are going to talk about Depth-first Search and backtracking. This is Part I of the intro to data structure and algo series. See others here.</em></p>
-<p> 
- </p>
+        <h3 id="resource">Resource</h3>
 
-<p>Depth-first search (DFS) is an algorithm for traversing or searching tree or graph data structures. It starts from the root node (if it’s a graph, you can select an arbitrary node) and goes along each branch as deep as possible before backtracking. Also we need to ensure that all the notes are marked as visited so we don’t need to visit the same node twice and got stuck in a loop.</p>
-
-<p>On a high-level, DFS can be implemented in two ways:</p>
-
-<ol>
-  <li>
-    <p>Iterative approach using a stack. (Compared to BFS that implemented using a queue)</p>
-  </li>
-  <li>
-    <p>Recursive approach using the same function by recursion (The function call is implemented by a stack frame in the backend, so it’s actually similar to the first approach)</p>
-  </li>
-</ol>
-
-<p>The basic idea of DFS using a stack is as follows:</p>
+<h4 id="courses">Courses:</h4>
 
 <ul>
   <li>
-    <p>From the starting node, push it into the stack.</p>
+    <p>Stanford CS224U: Natural Language Understanding, <a href="">YouTube</a></p>
   </li>
   <li>
-    <p>While stack is not empty:</p>
+    <p>Stanford CS224N: Natural Language Processing with Deep Learning by Chris Mannings, <a href="">YouTube</a></p>
+  </li>
+  <li>CMU CS11-737 Multilingual NLP 2020, by Graham Neubig: <a href="https://www.youtube.com/watch?v=xeu7LKIT194&amp;list=PL8PYTP1V4I8CHhppU6n1Q9-04m96D9gt5">YouTube</a></li>
+  <li>CMU CS11-737 Neural Nets for NLP 2020 by Graham Neubig: <a href="https://www.youtube.com/watch?v=D7o2Z1tAuQc&amp;list=PL8PYTP1V4I8CJ7nMxMC8aXv8WqKYwj-aJ">YouTube</a></li>
+</ul>
 
-    <p>pop a node from the top of the stack</p>
+<h4 id="textbook">Textbook:</h4>
 
-    <p>visit it (depends on our objective, visit here means different things)</p>
-
-    <p>mark it as visited, and push its neighbours into the stack.</p>
+<ul>
+  <li>
+    <p><a href="https://github.com/jacobeisenstein/gt-nlp-class/blob/master/notes/eisenstein-nlp-notes.pdf">Natural Language Processing</a> by Jacob Eisenstein</p>
+  </li>
+  <li>
+    <p><a href="https://web.stanford.edu/~jurafsky/slp3/">Speech and Language Processing</a> by Dan Jurafsky and James H. Martin</p>
+  </li>
+  <li>
+    <p><a href="https://u.cs.biu.ac.il/~yogo/nnlp.pdf">A Primer on Neural Network Models
+for Natural Language Processing</a> by Yoav Goldberg</p>
   </li>
 </ul>
 
-<h5 id="example-subsets-recursion">Example: Subsets, recursion</h5>
+<p>I also find Dan’s CS124: From Languages to Information <a href="http://web.stanford.edu/class/cs124/">course website</a> to be very helpful and closely related to materials in this book.
+Dan also taught an interesting course: [Food Talks: The Language of Food] (http://web.stanford.edu/class/think53/)</p>
 
-<pre><code class="language-python">class Solution:
-    def subsets(self, nums: List[int]) -&gt; List[List[int]]:
-        #backtracking
-        n = len(nums)
-        if n==0:
-            return []
-        def dfs(i, curr_path, res):
-            res.append(curr_path)
-            if len(curr_path)==n:
-                return
-            for j in range(i,n):
-                dfs(j+1, curr_path+[nums[j]], res)
-        res = []
-        curr_path = []
-        dfs(0, curr_path, res)
-        return res
-</code></pre>
+<h3 id="summary">Summary</h3>
+<p>traditional NLP (up until approximately 2012). Since 2013, people started to use neural nets stype representation.</p>
+
+<h3 id="word-embedding">Word Embedding</h3>
+<h4 id="word2vec">Word2Vec</h4>
+
+<p>2013</p>
+
+<p>Related paper and note:</p>
+
+<ul>
+  <li>
+    <p><a href="https://papers.nips.cc/paper/2013/file/9aa42b31882ec039965f3c4923ce901b-Paper.pdf">Distributed Representations of Words and Phrases
+and their Compositionality</a></p>
+  </li>
+  <li>
+    <p><a href="">Efficient Estimation of Word Representations in Vector Space</a></p>
+  </li>
+  <li>
+    <p><a href="https://arxiv.org/pdf/1402.3722.pdf">word2vec Explained</a>.</p>
+  </li>
+</ul>
+
+<p>This paper served as a summary/note to further explain the word2vec model in the previous paper. Specifically on negative sampling (drawn by unigram distribution to the power of 3/4) based on skip-gram model, and its ojective function. Note that the words and contexts representation are learned jointly so the model is non-convex(comparing to learning only the word representation while fixing contexts, it will reduced to a logistic regression which is convex).</p>
+
+<p>Here is a interesting Q&amp;A quoted from the paper:</p>
+
+<p>Why does this produce good word representations?</p>
+
+<p>Good question. We don’t really know.
+The distributional hypothesis states that words in similar contexts have similar meanings. The objective above clearly tries to increase the quantity $v_{w} \dot v_{c}$ for good word-context pairs, and decrease it for bad ones. Intuitively, this
+means that words that share many contexts will be similar to each other (note also that contexts sharing many words will also be similar to each other). This is, however, very hand-wavy.
+Can we make this intuition more precise? We’d really like to see something
+more formal.</p>
+
+<h3 id="count-based-model-and-co-occurance-matrix">Count-Based model and Co-occurance matrix</h3>
+<p>[this paper] (http://www.cnbc.cmu.edu/~plaut/papers/pdf/RohdeGonnermanPlautSUB-CogSci.COALS.pdf)</p>
+
+<h3 id="context-based-model">Context-Based model</h3>
+
+<p>“bigram”</p>
+
+<h4 id="skip-gram">Skip-Gram</h4>
+
+<h4 id="continuous-bag-of-words">Continuous Bag-of-words</h4>
+
+<ul>
+  <li>
+    <p><a href="https://arxiv.org/pdf/1411.2738.pdf">word2vec Parameter Learning Explained</a> this summary paper helped explain the detailed of CBOW and Skip-Gram models and herachical softmax and negative sampling.</p>
+  </li>
+  <li>
+    <p>hw1 on co-occurance <a href="https://web.stanford.edu/class/archive/cs/cs224n/cs224n.1194/assignments/a1_preview/exploring_word_vectors.html">here</a></p>
+  </li>
+  <li>
+    <p>hw2 on implementing word2vec <a href="https://web.stanford.edu/class/archive/cs/cs224n/cs224n.1194/assignments/a2.pdf">here</a></p>
+  </li>
+</ul>
+
+<h4 id="glove">GloVe</h4>
+<p>Global Vector (GloVe) model tries to combine count-based Matrix Factorization and skip-gram model.</p>
+
+<h3 id="language-models">Language Models</h3>
+<p>Language models are models that assign probability to sequence of words. N-gram is a simple model that assign sequance of n words. For example “my book”, “watch out” is a 2-gram (bigram), “this is a” is a 3-gram (trigram), etc. N-gram model will assign/estimate the probability of the n+1 word given the previous n words. 
+There are more complicated language model like RNN LMs and Seq2Seq.</p>
+
+<h3 id="reference">Reference</h3>
+
+<ul>
+  <li>
+    <p>CS229 winter 2019 <a href="https://web.stanford.edu/class/archive/cs/cs224n/cs224n.1194/">course website </a></p>
+  </li>
+  <li><a href="https://code.google.com/archive/p/word2vec/sa">Google’s word2vec project archive</a></li>
+  <li>
+    <p><a href="https://insights.untapt.com/deep-learning-for-natural-language-processing-tutorials-with-jupyter-notebooks-ad67f336ce3f">Deep Learning for Natural Language Processing: Tutorials with Jupyter Notebooks</a></p>
+  </li>
+  <li>[TensorFlow tutorials] (https://www.tensorflow.org/tutorials/text/word2vec)</li>
+  <li>blog post [Learning Word Embedding] (https://lilianweng.github.io/lil-log/2017/10/15/learning-word-embedding.html) by Lilian Weng</li>
+  <li>Up Next</li>
+</ul>
+
+<p>I will post some learning notes about NLP. Stay tuned!</p>
 
 
         
@@ -519,23 +580,31 @@
     
       
       
-      <a href="/tags/#algorithm" class="page__taxonomy-item" rel="tag">algorithm</a><span class="sep">, </span>
+      <a href="/tags/#bert" class="page__taxonomy-item" rel="tag">bert</a><span class="sep">, </span>
     
       
       
-      <a href="/tags/#bfs" class="page__taxonomy-item" rel="tag">bfs</a><span class="sep">, </span>
+      <a href="/tags/#course" class="page__taxonomy-item" rel="tag">course</a><span class="sep">, </span>
     
       
       
-      <a href="/tags/#data-structure" class="page__taxonomy-item" rel="tag">data structure</a><span class="sep">, </span>
+      <a href="/tags/#cs224n" class="page__taxonomy-item" rel="tag">cs224n</a><span class="sep">, </span>
     
       
       
-      <a href="/tags/#dfs" class="page__taxonomy-item" rel="tag">dfs</a><span class="sep">, </span>
+      <a href="/tags/#cs224u" class="page__taxonomy-item" rel="tag">cs224u</a><span class="sep">, </span>
     
       
       
-      <a href="/tags/#graph" class="page__taxonomy-item" rel="tag">graph</a>
+      <a href="/tags/#nlp" class="page__taxonomy-item" rel="tag">nlp</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/tags/#transformer" class="page__taxonomy-item" rel="tag">transformer</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/tags/#word2vec" class="page__taxonomy-item" rel="tag">word2vec</a>
     
     </span>
   </p>
@@ -543,8 +612,27 @@
 
 
 
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/categories/#nlp" class="page__taxonomy-item" rel="tag">nlp</a>
+    
+    </span>
+  </p>
+
+
         
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2020-11-20T00:00:00-05:00">November 20, 2020</time></p>
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2020-12-30T00:00:00-05:00">December 30, 2020</time></p>
 
 
       </footer>
@@ -554,22 +642,22 @@
     <h4 class="page__share-title">Share on</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?text=Intro+to+data+structure+and+algorithm+Part+I%20http%3A%2F%2Flocalhost%3A4000%2Fpost-algorithm-part-1%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=NLP+%20http%3A%2F%2Flocalhost%3A4000%2Fnlp%2Fnlp-part-1%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fpost-algorithm-part-1%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fnlp%2Fnlp-part-1%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Fpost-algorithm-part-1%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Fnlp%2Fnlp-part-1%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
 
       
   <nav class="pagination">
     
-      <a href="/stat/post-stat110-probability/" class="pagination--pager" title="STAT110: The Probability course you don’t want to miss
+      <a href="/book/post-recommendation_system_overview/" class="pagination--pager" title="Recommendation System Overview
 ">Previous</a>
     
     
-      <a href="/scheme/post-lisp-little-schemer-part-1/" class="pagination--pager" title="The Little Schemer Reading Note Part I
+      <a href="/nlp/nlp-part-2/" class="pagination--pager" title="NLP
 ">Next</a>
     
   </nav>
@@ -693,56 +781,6 @@
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-        <img src="/assets/images/thumbnails/NLP_image.jpg" alt="">
-      </div>
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/nlp/nlp-part-1/" rel="permalink">NLP
-</a>
-      
-    </h2>
-    
-
-  <p class="page__meta">
-    
-      
-      <span class="page__meta-date">
-        <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>
-        <time datetime="2020-12-30T00:00:00-05:00">December 30, 2020</time>
-      </span>
-    
-
-    <span class="page__meta-sep"></span>
-
-    
-      
-      
-
-      <span class="page__meta-readtime">
-        <i class="far fa-fw fa-clock" aria-hidden="true"></i>
-        
-          3 minute read
-        
-      </span>
-    
-  </p>
-
-
-    <p class="archive__item-excerpt" itemprop="description">Some resource for learning NLP
-</p>
-  </article>
-</div>
-
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-      <div class="archive__item-teaser">
         <img src="/assets/images/thumbnails/The_little_schemer.jpg" alt="">
       </div>
     
@@ -780,6 +818,56 @@
 
 
     <p class="archive__item-excerpt" itemprop="description">A overview of Recommendation System…
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="/assets/images/thumbnails/logo-data-structures-algorithms.png" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/post-algorithm-part-2/" rel="permalink">Intro to data structure and algorithm Part II
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2020-11-30T00:00:00-05:00">November 30, 2020</time>
+      </span>
+    
+
+    <span class="page__meta-sep"></span>
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-fw fa-clock" aria-hidden="true"></i>
+        
+          less than 1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">BFS and level order traversal using queue
 </p>
   </article>
 </div>
@@ -858,8 +946,8 @@
     
   <script>
     var disqus_config = function () {
-      this.page.url = "http://localhost:4000/post-algorithm-part-1/";  /* Replace PAGE_URL with your page's canonical URL variable */
-      this.page.identifier = "/post-algorithm-part-1"; /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
+      this.page.url = "http://localhost:4000/nlp/nlp-part-1/";  /* Replace PAGE_URL with your page's canonical URL variable */
+      this.page.identifier = "/nlp/nlp-part-1"; /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
     };
     (function() { /* DON'T EDIT BELOW THIS LINE */
       var d = document, s = d.createElement('script');
