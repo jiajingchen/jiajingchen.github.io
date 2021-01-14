@@ -28,21 +28,28 @@ docs:
   - title: NLP
     children:
       - title: "NLP Learning Resource"
-        url: /nlp-part-1/
-      - title: "Note"
-        url: /nlp-part-2/
+        url: /nlp/nlp-part-1/
+      - title: "Word Embeddings, Word2Vec"
+        url: /nlp/nlp-part-2/
+      - title: "Attention"
+        url: /nlp/nlp-part-2/
 
   - title: Algorithms 
     children:
       - title: "DFS"
-        url: /post-algorithm-part-1/
+        url: /algo/post-algorithm-part-1/
       - title: "BFS"
-        url: /post-algorithm-part-2/
+        url: /algo/post-algorithm-part-2/
+
+  - title: RecSys
+    children:
+      - title: "RecSys History & Overview"
+        url: /recsys/recommendation_system_overview/
 
 
   - title: Git 
     children:
       - title: "Git Basic Part 1"
-        url: /git-basic-part-1/
+        url: /git/git-basic-part-1/
       - title: "Git Basic Part 2"
-        url: /git-basic-part-2/
+        url: /git/git-basic-part-2/
