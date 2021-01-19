@@ -325,21 +325,7 @@
         
         <ul>
           
-            <li><a href="/stat/post-stat110-probability/">STAT 110</a></li>
-          
-        </ul>
-        
-      </li>
-    
-      <li>
-        
-          <span class="nav__sub-title">The Little Schemer</span>
-        
-
-        
-        <ul>
-          
-            <li><a href="/scheme/post-lisp-little-schemer-part-1/">Reading Note Part 1</a></li>
+            <li><a href="/stat/stat110-probability/">STAT 110</a></li>
           
         </ul>
         
@@ -353,9 +339,11 @@
         
         <ul>
           
-            <li><a href="/post-nlp-part-1/">NLP Learning</a></li>
+            <li><a href="/nlp/nlp-part-1/" class="active">Summary and Resources</a></li>
           
-            <li><a href="/post-nlp-part-2/">Note</a></li>
+            <li><a href="/nlp/nlp-part-2/">Word Embeddings</a></li>
+          
+            <li><a href="/nlp/nlp-part-2/">Attention</a></li>
           
         </ul>
         
@@ -369,9 +357,37 @@
         
         <ul>
           
-            <li><a href="/post-algorithm-part-1/">DFS</a></li>
+            <li><a href="/algo/algorithm-part-1/">DFS</a></li>
           
-            <li><a href="/post-algorithm-part-2/">BFS</a></li>
+            <li><a href="/algo/algorithm-part-2/">BFS</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          <span class="nav__sub-title">RecSys</span>
+        
+
+        
+        <ul>
+          
+            <li><a href="/recsys/recommendation_system_overview/">RecSys Overview</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          <span class="nav__sub-title">The Little Schemer</span>
+        
+
+        
+        <ul>
+          
+            <li><a href="/scheme/lisp-little-schemer-part-1/">Reading Note</a></li>
           
         </ul>
         
@@ -385,9 +401,9 @@
         
         <ul>
           
-            <li><a href="/git-basic-part-1/">Git Basic Part 1</a></li>
+            <li><a href="/git/git-basic-part-1/">Git Basic Part 1</a></li>
           
-            <li><a href="/git-basic-part-2/">Git Basic Part 2</a></li>
+            <li><a href="/git/git-basic-part-2/">Git Basic Part 2</a></li>
           
         </ul>
         
@@ -433,7 +449,7 @@
       <span class="page__meta-readtime">
         <i class="far fa-clock" aria-hidden="true"></i>
         
-          3 minute read
+          2 minute read
         
       </span>
     
@@ -445,22 +461,31 @@
 
       <section class="page__content" itemprop="text">
         
-        <h3 id="resource">Resource</h3>
+        <h2 id="intro">Intro</h2>
 
-<h4 id="courses">Courses:</h4>
+<p>Today we are goinig to talk about NLP! I have listed some resources that are helpful to start the learning journey in this field. I also did a summary of some of the topics/SOTA models in NLP. This is part of the NLP series. See summary and other posts here.</p>
+
+<h2 id="resource">Resource</h2>
+
+<h3 id="courses">Courses:</h3>
+
+<p>The first three are graduate level NLP courses with focus on neural nets applications and SOTA models (Attention, Transformer, BERT, Multi-lingual, etc) while the last two courses are more introductory courses.</p>
 
 <ul>
   <li>
-    <p>Stanford CS224U: Natural Language Understanding, <a href="">YouTube</a></p>
+    <p><a href="https://www.youtube.com/playlist?list=PLoROMvodv4rOhcuXMZkNm7j3fVwBBY42z">Stanford CS224N</a> Natural Language Processing with Deep Learning by Christopher Mannings</p>
+  </li>
+  <li><a href="https://www.youtube.com/watch?v=xeu7LKIT194&amp;list=PL8PYTP1V4I8CHhppU6n1Q9-04m96D9gt5">CMU CS11-737</a> Multilingual NLP 2020, by Graham Neubig</li>
+  <li>
+    <p><a href="https://www.youtube.com/watch?v=D7o2Z1tAuQc&amp;list=PL8PYTP1V4I8CJ7nMxMC8aXv8WqKYwj-aJ">CMU CS11-737</a> Neural Nets for NLP 2020 by Graham Neubig</p>
   </li>
   <li>
-    <p>Stanford CS224N: Natural Language Processing with Deep Learning by Chris Mannings, <a href="">YouTube</a></p>
+    <p><a href="https://www.youtube.com/playlist?list=PLoROMvodv4rObpMCir6rNNUlFAn56Js20">Stanford CS224U</a> Natural Language Understanding</p>
   </li>
-  <li>CMU CS11-737 Multilingual NLP 2020, by Graham Neubig: <a href="https://www.youtube.com/watch?v=xeu7LKIT194&amp;list=PL8PYTP1V4I8CHhppU6n1Q9-04m96D9gt5">YouTube</a></li>
-  <li>CMU CS11-737 Neural Nets for NLP 2020 by Graham Neubig: <a href="https://www.youtube.com/watch?v=D7o2Z1tAuQc&amp;list=PL8PYTP1V4I8CJ7nMxMC8aXv8WqKYwj-aJ">YouTube</a></li>
+  <li><a href="https://www.youtube.com/channel/UC_48v322owNVtORXuMeRmpA">Stanford CS124</a> From Languages to Information by Dan Jurafsky</li>
 </ul>
 
-<h4 id="textbook">Textbook:</h4>
+<h3 id="textbook">Textbook:</h3>
 
 <ul>
   <li>
@@ -473,47 +498,27 @@
     <p><a href="https://u.cs.biu.ac.il/~yogo/nnlp.pdf">A Primer on Neural Network Models
 for Natural Language Processing</a> by Yoav Goldberg</p>
   </li>
+  <li>
+    <p><a href="https://nlp.stanford.edu/IR-book/information-retrieval-book.html">Introduction to Information Retrieval</a> by Christopher Manning, Prabhakar Raghavan and Hinrich Schütze</p>
+  </li>
 </ul>
 
-<p>I also find Dan’s CS124: From Languages to Information <a href="http://web.stanford.edu/class/cs124/">course website</a> to be very helpful and closely related to materials in this book.
-Dan also taught an interesting course: [Food Talks: The Language of Food] (http://web.stanford.edu/class/think53/)</p>
+<h2 id="summary">Summary</h2>
 
-<h3 id="summary">Summary</h3>
-<p>traditional NLP (up until approximately 2012). Since 2013, people started to use neural nets stype representation.</p>
+<p>Chris mentioned in CS224N that NLP can be categorized into more tranditional NLP (up until approximately 2012) and more “neural nets stype” representation and models since 2013. So let’s talk about some recent breakthroughs in NLP:</p>
 
 <h3 id="word-embedding">Word Embedding</h3>
+
+<p>Word embedding is a dense representation of words in vector space. The biggest jump in NLP when moving from the sparse-input linear models to neural-network based models is to represent each feature as a dense vectors rather than each feature as a unique dimension (one-hot encoding/representation).</p>
+
+<p>The word embeddings (vectors for each word) can be trained just like other parameters in the neural network, or it can be used from pre-trained models.</p>
+
+<p>There are several ways we can obtain word enbeddings:</p>
+
+<h4 id="count-based-model-and-co-occurance-matrix">Count-Based model and Co-occurance matrix</h4>
+
 <h4 id="word2vec">Word2Vec</h4>
 
-<p>2013</p>
-
-<p>Related paper and note:</p>
-
-<ul>
-  <li>
-    <p><a href="https://papers.nips.cc/paper/2013/file/9aa42b31882ec039965f3c4923ce901b-Paper.pdf">Distributed Representations of Words and Phrases
-and their Compositionality</a></p>
-  </li>
-  <li>
-    <p><a href="">Efficient Estimation of Word Representations in Vector Space</a></p>
-  </li>
-  <li>
-    <p><a href="https://arxiv.org/pdf/1402.3722.pdf">word2vec Explained</a>.</p>
-  </li>
-</ul>
-
-<p>This paper served as a summary/note to further explain the word2vec model in the previous paper. Specifically on negative sampling (drawn by unigram distribution to the power of 3/4) based on skip-gram model, and its ojective function. Note that the words and contexts representation are learned jointly so the model is non-convex(comparing to learning only the word representation while fixing contexts, it will reduced to a logistic regression which is convex).</p>
-
-<p>Here is a interesting Q&amp;A quoted from the paper:</p>
-
-<p>Why does this produce good word representations?</p>
-
-<p>Good question. We don’t really know.
-The distributional hypothesis states that words in similar contexts have similar meanings. The objective above clearly tries to increase the quantity $v_{w} \dot v_{c}$ for good word-context pairs, and decrease it for bad ones. Intuitively, this
-means that words that share many contexts will be similar to each other (note also that contexts sharing many words will also be similar to each other). This is, however, very hand-wavy.
-Can we make this intuition more precise? We’d really like to see something
-more formal.</p>
-
-<h3 id="count-based-model-and-co-occurance-matrix">Count-Based model and Co-occurance matrix</h3>
 <p>[this paper] (http://www.cnbc.cmu.edu/~plaut/papers/pdf/RohdeGonnermanPlautSUB-CogSci.COALS.pdf)</p>
 
 <h3 id="context-based-model">Context-Based model</h3>
@@ -539,22 +544,11 @@ more formal.</p>
 <h4 id="glove">GloVe</h4>
 <p>Global Vector (GloVe) model tries to combine count-based Matrix Factorization and skip-gram model.</p>
 
-<h3 id="language-models">Language Models</h3>
+<h2 id="language-models">Language Models</h2>
 <p>Language models are models that assign probability to sequence of words. N-gram is a simple model that assign sequance of n words. For example “my book”, “watch out” is a 2-gram (bigram), “this is a” is a 3-gram (trigram), etc. N-gram model will assign/estimate the probability of the n+1 word given the previous n words. 
 There are more complicated language model like RNN LMs and Seq2Seq.</p>
 
-<h3 id="reference">Reference</h3>
-
 <ul>
-  <li>
-    <p>CS229 winter 2019 <a href="https://web.stanford.edu/class/archive/cs/cs224n/cs224n.1194/">course website </a></p>
-  </li>
-  <li><a href="https://code.google.com/archive/p/word2vec/sa">Google’s word2vec project archive</a></li>
-  <li>
-    <p><a href="https://insights.untapt.com/deep-learning-for-natural-language-processing-tutorials-with-jupyter-notebooks-ad67f336ce3f">Deep Learning for Natural Language Processing: Tutorials with Jupyter Notebooks</a></p>
-  </li>
-  <li>[TensorFlow tutorials] (https://www.tensorflow.org/tutorials/text/word2vec)</li>
-  <li>blog post [Learning Word Embedding] (https://lilianweng.github.io/lil-log/2017/10/15/learning-word-embedding.html) by Lilian Weng</li>
   <li>Up Next</li>
 </ul>
 
@@ -653,7 +647,7 @@ There are more complicated language model like RNN LMs and Seq2Seq.</p>
       
   <nav class="pagination">
     
-      <a href="/book/post-recommendation_system_overview/" class="pagination--pager" title="Recommendation System Overview
+      <a href="/recsys/recommendation_system_overview/" class="pagination--pager" title="Recommendation System Overview
 ">Previous</a>
     
     
@@ -786,7 +780,7 @@ There are more complicated language model like RNN LMs and Seq2Seq.</p>
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/book/post-recommendation_system_overview/" rel="permalink">Recommendation System Overview
+        <a href="/recsys/recommendation_system_overview/" rel="permalink">Recommendation System Overview
 </a>
       
     </h2>
@@ -831,12 +825,12 @@ There are more complicated language model like RNN LMs and Seq2Seq.</p>
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-        <img src="/assets/images/thumbnails/logo-data-structures-algorithms.png" alt="">
+        <img src="/assets/images/thumbnails/The_little_schemer.jpg" alt="">
       </div>
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/post-algorithm-part-2/" rel="permalink">Intro to data structure and algorithm Part II
+        <a href="/git/git-basic-part-1/" rel="permalink">Git Basic Part I
 </a>
       
     </h2>
@@ -847,7 +841,7 @@ There are more complicated language model like RNN LMs and Seq2Seq.</p>
       
       <span class="page__meta-date">
         <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>
-        <time datetime="2020-11-30T00:00:00-05:00">November 30, 2020</time>
+        <time datetime="2020-12-03T00:00:00-05:00">December 3, 2020</time>
       </span>
     
 
@@ -867,7 +861,7 @@ There are more complicated language model like RNN LMs and Seq2Seq.</p>
   </p>
 
 
-    <p class="archive__item-excerpt" itemprop="description">BFS and level order traversal using queue
+    <p class="archive__item-excerpt" itemprop="description">What is a git branch?
 </p>
   </article>
 </div>

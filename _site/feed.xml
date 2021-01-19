@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-01-14T17:05:03-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Jiajing Chen</title><subtitle>Personal Website</subtitle><author><name>Jiajing Chen</name></author><entry><title type="html">Attention</title><link href="http://localhost:4000/nlp/nlp-part-3/" rel="alternate" type="text/html" title="Attention" /><published>2021-01-13T00:00:00-05:00</published><updated>2021-01-13T00:00:00-05:00</updated><id>http://localhost:4000/nlp/nlp-part-3</id><content type="html" xml:base="http://localhost:4000/nlp/nlp-part-3/">&lt;p&gt;Today we are going to talk about Attention. This is part of the NLP series. See summary and other posts here.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-01-18T16:36:30-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Jiajing Chen</title><subtitle>Personal Website</subtitle><author><name>Jiajing Chen</name></author><entry><title type="html">Attention</title><link href="http://localhost:4000/nlp/nlp-part-3/" rel="alternate" type="text/html" title="Attention" /><published>2021-01-13T00:00:00-05:00</published><updated>2021-01-13T00:00:00-05:00</updated><id>http://localhost:4000/nlp/nlp-part-3</id><content type="html" xml:base="http://localhost:4000/nlp/nlp-part-3/">&lt;p&gt;Today we are going to talk about Attention. This is part of the NLP series. See summary and other posts here.&lt;/p&gt;
 
 &lt;h3 id=&quot;bert&quot;&gt;BERT&lt;/h3&gt;
 &lt;p&gt;In the previous post we mentioned that since 2013, people started to use neural nets style representation like word2vec, etc.&lt;/p&gt;
@@ -24,9 +24,10 @@
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;I will post more learning notes about NLP. Stay tuned!&lt;/p&gt;</content><author><name>Jiajing Chen</name></author><category term="nlp" /><category term="nlp" /><category term="cs224n" /><category term="word2vec" /><category term="attention" /><category term="transformer" /><category term="bert" /><summary type="html">Attention please!</summary></entry><entry><title type="html">NLP</title><link href="http://localhost:4000/nlp/nlp-part-2/" rel="alternate" type="text/html" title="NLP " /><published>2021-01-03T00:00:00-05:00</published><updated>2021-01-03T00:00:00-05:00</updated><id>http://localhost:4000/nlp/nlp-part-2</id><content type="html" xml:base="http://localhost:4000/nlp/nlp-part-2/">&lt;p&gt;Today we are going to talk about word embeddings. This is part of the NLP series. See summary and other posts here.&lt;/p&gt;
+&lt;p&gt;I will post more learning notes about NLP. Stay tuned!&lt;/p&gt;</content><author><name>Jiajing Chen</name></author><category term="nlp" /><category term="nlp" /><category term="cs224n" /><category term="word2vec" /><category term="attention" /><category term="transformer" /><category term="bert" /><summary type="html">Attention please!</summary></entry><entry><title type="html">NLP</title><link href="http://localhost:4000/nlp/nlp-part-2/" rel="alternate" type="text/html" title="NLP " /><published>2021-01-03T00:00:00-05:00</published><updated>2021-01-03T00:00:00-05:00</updated><id>http://localhost:4000/nlp/nlp-part-2</id><content type="html" xml:base="http://localhost:4000/nlp/nlp-part-2/">&lt;p&gt;Today we are going to talk about word embeddings. This is the second part of the NLP series. See summary and other posts here.&lt;/p&gt;
 
-&lt;h3 id=&quot;summary&quot;&gt;Summary&lt;/h3&gt;
+&lt;h3 id=&quot;intro&quot;&gt;Intro&lt;/h3&gt;
+
 &lt;p&gt;In the previous post we mentioned that since 2013, people started to use neural nets style representation like word2vec, etc.&lt;/p&gt;
 
 &lt;h3 id=&quot;word-embedding&quot;&gt;Word Embedding&lt;/h3&gt;
@@ -92,7 +93,7 @@ more formal.&lt;/p&gt;
 &lt;p&gt;Language models are models that assign probability to sequence of words. N-gram is a simple model that assign sequance of n words. For example “my book”, “watch out” is a 2-gram (bigram), “this is a” is a 3-gram (trigram), etc. N-gram model will assign/estimate the probability of the n+1 word given the previous n words. 
 There are more complicated language model like RNN LMs and Seq2Seq.&lt;/p&gt;
 
-&lt;h3 id=&quot;reference&quot;&gt;Reference&lt;/h3&gt;
+&lt;h2 id=&quot;reference&quot;&gt;Reference&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;
@@ -107,22 +108,31 @@ There are more complicated language model like RNN LMs and Seq2Seq.&lt;/p&gt;
   &lt;li&gt;Up Next&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;I will post some learning notes about NLP. Stay tuned!&lt;/p&gt;</content><author><name>Jiajing Chen</name></author><category term="nlp" /><category term="nlp" /><category term="cs224n" /><category term="word2vec" /><summary type="html">Word Embeddings</summary></entry><entry><title type="html">NLP</title><link href="http://localhost:4000/nlp/nlp-part-1/" rel="alternate" type="text/html" title="NLP " /><published>2020-12-30T00:00:00-05:00</published><updated>2020-12-30T00:00:00-05:00</updated><id>http://localhost:4000/nlp/nlp-part-1</id><content type="html" xml:base="http://localhost:4000/nlp/nlp-part-1/">&lt;h3 id=&quot;resource&quot;&gt;Resource&lt;/h3&gt;
+&lt;p&gt;I will post some learning notes about NLP. Stay tuned!&lt;/p&gt;</content><author><name>Jiajing Chen</name></author><category term="nlp" /><category term="nlp" /><category term="cs224n" /><category term="word2vec" /><summary type="html">Word Embeddings</summary></entry><entry><title type="html">NLP</title><link href="http://localhost:4000/nlp/nlp-part-1/" rel="alternate" type="text/html" title="NLP " /><published>2020-12-30T00:00:00-05:00</published><updated>2020-12-30T00:00:00-05:00</updated><id>http://localhost:4000/nlp/nlp-part-1</id><content type="html" xml:base="http://localhost:4000/nlp/nlp-part-1/">&lt;h2 id=&quot;intro&quot;&gt;Intro&lt;/h2&gt;
 
-&lt;h4 id=&quot;courses&quot;&gt;Courses:&lt;/h4&gt;
+&lt;p&gt;Today we are goinig to talk about NLP! I have listed some resources that are helpful to start the learning journey in this field. I also did a summary of some of the topics/SOTA models in NLP. This is part of the NLP series. See summary and other posts here.&lt;/p&gt;
+
+&lt;h2 id=&quot;resource&quot;&gt;Resource&lt;/h2&gt;
+
+&lt;h3 id=&quot;courses&quot;&gt;Courses:&lt;/h3&gt;
+
+&lt;p&gt;The first three are graduate level NLP courses with focus on neural nets applications and SOTA models (Attention, Transformer, BERT, Multi-lingual, etc) while the last two courses are more introductory courses.&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;
-    &lt;p&gt;Stanford CS224U: Natural Language Understanding, &lt;a href=&quot;&quot;&gt;YouTube&lt;/a&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;https://www.youtube.com/playlist?list=PLoROMvodv4rOhcuXMZkNm7j3fVwBBY42z&quot;&gt;Stanford CS224N&lt;/a&gt; Natural Language Processing with Deep Learning by Christopher Mannings&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=xeu7LKIT194&amp;amp;list=PL8PYTP1V4I8CHhppU6n1Q9-04m96D9gt5&quot;&gt;CMU CS11-737&lt;/a&gt; Multilingual NLP 2020, by Graham Neubig&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=D7o2Z1tAuQc&amp;amp;list=PL8PYTP1V4I8CJ7nMxMC8aXv8WqKYwj-aJ&quot;&gt;CMU CS11-737&lt;/a&gt; Neural Nets for NLP 2020 by Graham Neubig&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;Stanford CS224N: Natural Language Processing with Deep Learning by Chris Mannings, &lt;a href=&quot;&quot;&gt;YouTube&lt;/a&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;https://www.youtube.com/playlist?list=PLoROMvodv4rObpMCir6rNNUlFAn56Js20&quot;&gt;Stanford CS224U&lt;/a&gt; Natural Language Understanding&lt;/p&gt;
   &lt;/li&gt;
-  &lt;li&gt;CMU CS11-737 Multilingual NLP 2020, by Graham Neubig: &lt;a href=&quot;https://www.youtube.com/watch?v=xeu7LKIT194&amp;amp;list=PL8PYTP1V4I8CHhppU6n1Q9-04m96D9gt5&quot;&gt;YouTube&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;CMU CS11-737 Neural Nets for NLP 2020 by Graham Neubig: &lt;a href=&quot;https://www.youtube.com/watch?v=D7o2Z1tAuQc&amp;amp;list=PL8PYTP1V4I8CJ7nMxMC8aXv8WqKYwj-aJ&quot;&gt;YouTube&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/channel/UC_48v322owNVtORXuMeRmpA&quot;&gt;Stanford CS124&lt;/a&gt; From Languages to Information by Dan Jurafsky&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h4 id=&quot;textbook&quot;&gt;Textbook:&lt;/h4&gt;
+&lt;h3 id=&quot;textbook&quot;&gt;Textbook:&lt;/h3&gt;
 
 &lt;ul&gt;
   &lt;li&gt;
@@ -135,47 +145,27 @@ There are more complicated language model like RNN LMs and Seq2Seq.&lt;/p&gt;
     &lt;p&gt;&lt;a href=&quot;https://u.cs.biu.ac.il/~yogo/nnlp.pdf&quot;&gt;A Primer on Neural Network Models
 for Natural Language Processing&lt;/a&gt; by Yoav Goldberg&lt;/p&gt;
   &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://nlp.stanford.edu/IR-book/information-retrieval-book.html&quot;&gt;Introduction to Information Retrieval&lt;/a&gt; by Christopher Manning, Prabhakar Raghavan and Hinrich Schütze&lt;/p&gt;
+  &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;I also find Dan’s CS124: From Languages to Information &lt;a href=&quot;http://web.stanford.edu/class/cs124/&quot;&gt;course website&lt;/a&gt; to be very helpful and closely related to materials in this book.
-Dan also taught an interesting course: [Food Talks: The Language of Food] (http://web.stanford.edu/class/think53/)&lt;/p&gt;
+&lt;h2 id=&quot;summary&quot;&gt;Summary&lt;/h2&gt;
 
-&lt;h3 id=&quot;summary&quot;&gt;Summary&lt;/h3&gt;
-&lt;p&gt;traditional NLP (up until approximately 2012). Since 2013, people started to use neural nets stype representation.&lt;/p&gt;
+&lt;p&gt;Chris mentioned in CS224N that NLP can be categorized into more tranditional NLP (up until approximately 2012) and more “neural nets stype” representation and models since 2013. So let’s talk about some recent breakthroughs in NLP:&lt;/p&gt;
 
 &lt;h3 id=&quot;word-embedding&quot;&gt;Word Embedding&lt;/h3&gt;
+
+&lt;p&gt;Word embedding is a dense representation of words in vector space. The biggest jump in NLP when moving from the sparse-input linear models to neural-network based models is to represent each feature as a dense vectors rather than each feature as a unique dimension (one-hot encoding/representation).&lt;/p&gt;
+
+&lt;p&gt;The word embeddings (vectors for each word) can be trained just like other parameters in the neural network, or it can be used from pre-trained models.&lt;/p&gt;
+
+&lt;p&gt;There are several ways we can obtain word enbeddings:&lt;/p&gt;
+
+&lt;h4 id=&quot;count-based-model-and-co-occurance-matrix&quot;&gt;Count-Based model and Co-occurance matrix&lt;/h4&gt;
+
 &lt;h4 id=&quot;word2vec&quot;&gt;Word2Vec&lt;/h4&gt;
 
-&lt;p&gt;2013&lt;/p&gt;
-
-&lt;p&gt;Related paper and note:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://papers.nips.cc/paper/2013/file/9aa42b31882ec039965f3c4923ce901b-Paper.pdf&quot;&gt;Distributed Representations of Words and Phrases
-and their Compositionality&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;&quot;&gt;Efficient Estimation of Word Representations in Vector Space&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://arxiv.org/pdf/1402.3722.pdf&quot;&gt;word2vec Explained&lt;/a&gt;.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;This paper served as a summary/note to further explain the word2vec model in the previous paper. Specifically on negative sampling (drawn by unigram distribution to the power of 3/4) based on skip-gram model, and its ojective function. Note that the words and contexts representation are learned jointly so the model is non-convex(comparing to learning only the word representation while fixing contexts, it will reduced to a logistic regression which is convex).&lt;/p&gt;
-
-&lt;p&gt;Here is a interesting Q&amp;amp;A quoted from the paper:&lt;/p&gt;
-
-&lt;p&gt;Why does this produce good word representations?&lt;/p&gt;
-
-&lt;p&gt;Good question. We don’t really know.
-The distributional hypothesis states that words in similar contexts have similar meanings. The objective above clearly tries to increase the quantity $v_{w} \dot v_{c}$ for good word-context pairs, and decrease it for bad ones. Intuitively, this
-means that words that share many contexts will be similar to each other (note also that contexts sharing many words will also be similar to each other). This is, however, very hand-wavy.
-Can we make this intuition more precise? We’d really like to see something
-more formal.&lt;/p&gt;
-
-&lt;h3 id=&quot;count-based-model-and-co-occurance-matrix&quot;&gt;Count-Based model and Co-occurance matrix&lt;/h3&gt;
 &lt;p&gt;[this paper] (http://www.cnbc.cmu.edu/~plaut/papers/pdf/RohdeGonnermanPlautSUB-CogSci.COALS.pdf)&lt;/p&gt;
 
 &lt;h3 id=&quot;context-based-model&quot;&gt;Context-Based model&lt;/h3&gt;
@@ -201,30 +191,46 @@ more formal.&lt;/p&gt;
 &lt;h4 id=&quot;glove&quot;&gt;GloVe&lt;/h4&gt;
 &lt;p&gt;Global Vector (GloVe) model tries to combine count-based Matrix Factorization and skip-gram model.&lt;/p&gt;
 
-&lt;h3 id=&quot;language-models&quot;&gt;Language Models&lt;/h3&gt;
+&lt;h2 id=&quot;language-models&quot;&gt;Language Models&lt;/h2&gt;
 &lt;p&gt;Language models are models that assign probability to sequence of words. N-gram is a simple model that assign sequance of n words. For example “my book”, “watch out” is a 2-gram (bigram), “this is a” is a 3-gram (trigram), etc. N-gram model will assign/estimate the probability of the n+1 word given the previous n words. 
 There are more complicated language model like RNN LMs and Seq2Seq.&lt;/p&gt;
 
-&lt;h3 id=&quot;reference&quot;&gt;Reference&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Up Next&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I will post some learning notes about NLP. Stay tuned!&lt;/p&gt;</content><author><name>Jiajing Chen</name></author><category term="nlp" /><category term="nlp" /><category term="course" /><category term="cs224u" /><category term="cs224n" /><category term="word2vec" /><category term="transformer" /><category term="bert" /><summary type="html">Some resource for learning NLP</summary></entry><entry><title type="html">Recommendation System Overview</title><link href="http://localhost:4000/recsys/recommendation_system_overview/" rel="alternate" type="text/html" title="Recommendation System Overview" /><published>2020-12-20T00:00:00-05:00</published><updated>2020-12-20T00:00:00-05:00</updated><id>http://localhost:4000/recsys/recommendation_system_overview</id><content type="html" xml:base="http://localhost:4000/recsys/recommendation_system_overview/">&lt;ul&gt;
+  &lt;li&gt;Up Next&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;In the part II we will talk more about some of the methods. Stay tuned!&lt;/p&gt;</content><author><name>Jiajing Chen</name></author><category term="recsys" /><category term="recsys" /><category term="deep learning" /><summary type="html">A overview of Recommendation System...</summary></entry><entry><title type="html">Git Basic Part I</title><link href="http://localhost:4000/git/git-basic-part-1/" rel="alternate" type="text/html" title="Git Basic Part I" /><published>2020-12-03T00:00:00-05:00</published><updated>2020-12-03T00:00:00-05:00</updated><id>http://localhost:4000/git/git-basic-part-1</id><content type="html" xml:base="http://localhost:4000/git/git-basic-part-1/">&lt;h3 id=&quot;git-branch&quot;&gt;Git Branch&lt;/h3&gt;
+
+&lt;h4 id=&quot;types-of-git-branch&quot;&gt;Types of git branch&lt;/h4&gt;
+
+&lt;p&gt;there are two type of branches:&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;
-    &lt;p&gt;CS229 winter 2019 &lt;a href=&quot;https://web.stanford.edu/class/archive/cs/cs224n/cs224n.1194/&quot;&gt;course website &lt;/a&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;code&gt;local branches&lt;/code&gt;&lt;/p&gt;
   &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://code.google.com/archive/p/word2vec/sa&quot;&gt;Google’s word2vec project archive&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://insights.untapt.com/deep-learning-for-natural-language-processing-tutorials-with-jupyter-notebooks-ad67f336ce3f&quot;&gt;Deep Learning for Natural Language Processing: Tutorials with Jupyter Notebooks&lt;/a&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;code&gt;remove-tracking branches&lt;/code&gt;&lt;/p&gt;
   &lt;/li&gt;
-  &lt;li&gt;[TensorFlow tutorials] (https://www.tensorflow.org/tutorials/text/word2vec)&lt;/li&gt;
-  &lt;li&gt;blog post [Learning Word Embedding] (https://lilianweng.github.io/lil-log/2017/10/15/learning-word-embedding.html) by Lilian Weng&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;you can check them out using &lt;code&gt;git branch&lt;/code&gt; and &lt;code&gt;git branch -r&lt;/code&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;tree-and-dag&quot;&gt;Tree and DAG&lt;/h3&gt;
+
+&lt;h3 id=&quot;git-pull&quot;&gt;Git Pull&lt;/h3&gt;
+&lt;p&gt;git fetch
+git merge&lt;/p&gt;
+
+&lt;ul&gt;
   &lt;li&gt;Up Next&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;I will post some learning notes about NLP. Stay tuned!&lt;/p&gt;</content><author><name>Jiajing Chen</name></author><category term="nlp" /><category term="nlp" /><category term="course" /><category term="cs224u" /><category term="cs224n" /><category term="word2vec" /><category term="transformer" /><category term="bert" /><summary type="html">Some resource for learning NLP</summary></entry><entry><title type="html">Recommendation System Overview</title><link href="http://localhost:4000/book/post-recommendation_system_overview/" rel="alternate" type="text/html" title="Recommendation System Overview" /><published>2020-12-20T00:00:00-05:00</published><updated>2020-12-20T00:00:00-05:00</updated><id>http://localhost:4000/book/post-recommendation_system_overview</id><content type="html" xml:base="http://localhost:4000/book/post-recommendation_system_overview/">&lt;ul&gt;
-  &lt;li&gt;Up Next&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;In the part II we will talk more about some of the methods. Stay tuned!&lt;/p&gt;</content><author><name>Jiajing Chen</name></author><category term="book" /><category term="recsys" /><summary type="html">A overview of Recommendation System...</summary></entry><entry><title type="html">Intro to data structure and algorithm Part II</title><link href="http://localhost:4000/post-algorithm-part-2/" rel="alternate" type="text/html" title="Intro to data structure and algorithm Part II" /><published>2020-11-30T00:00:00-05:00</published><updated>2020-11-30T00:00:00-05:00</updated><id>http://localhost:4000/post-algorithm-part-2</id><content type="html" xml:base="http://localhost:4000/post-algorithm-part-2/">&lt;p class=&quot;notice--primary&quot;&gt;&lt;em&gt;This is Part II of the intro to data structure and algo series. See others here.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;In the part II we will talk more about xxx in git. Stay tuned!&lt;/p&gt;</content><author><name>Jiajing Chen</name></author><category term="git" /><category term="git" /><category term="tree" /><category term="dag" /><summary type="html">What is a git branch?</summary></entry><entry><title type="html">Intro to data structure and algorithm Part II</title><link href="http://localhost:4000/algo/algorithm-part-2/" rel="alternate" type="text/html" title="Intro to data structure and algorithm Part II" /><published>2020-11-30T00:00:00-05:00</published><updated>2020-11-30T00:00:00-05:00</updated><id>http://localhost:4000/algo/algorithm-part-2</id><content type="html" xml:base="http://localhost:4000/algo/algorithm-part-2/">&lt;p class=&quot;notice--primary&quot;&gt;&lt;em&gt;This is Part II of the intro to data structure and algo series. See others here.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt; 
  &lt;/p&gt;
 
@@ -262,59 +268,7 @@ There are more complicated language model like RNN LMs and Seq2Seq.&lt;/p&gt;
 &lt;p&gt;minimum steps in an island&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;
-&lt;/code&gt;&lt;/pre&gt;</content><author><name>Jiajing Chen</name></author><category term="algorithm" /><category term="data structure" /><category term="dfs" /><category term="bfs" /><category term="graph" /><summary type="html">BFS and level order traversal using queue</summary></entry><entry><title type="html">Intro to data structure and algorithm Part I</title><link href="http://localhost:4000/post-algorithm-part-1/" rel="alternate" type="text/html" title="Intro to data structure and algorithm Part I" /><published>2020-11-20T00:00:00-05:00</published><updated>2020-11-20T00:00:00-05:00</updated><id>http://localhost:4000/post-algorithm-part-1</id><content type="html" xml:base="http://localhost:4000/post-algorithm-part-1/">&lt;p class=&quot;notice--primary&quot;&gt;&lt;em&gt;Today we are going to talk about Depth-first Search and backtracking. This is Part I of the intro to data structure and algo series. See others here.&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt; 
- &lt;/p&gt;
-
-&lt;p&gt;Depth-first search (DFS) is an algorithm for traversing or searching tree or graph data structures. It starts from the root node (if it’s a graph, you can select an arbitrary node) and goes along each branch as deep as possible before backtracking. Also we need to ensure that all the notes are marked as visited so we don’t need to visit the same node twice and got stuck in a loop.&lt;/p&gt;
-
-&lt;p&gt;On a high-level, DFS can be implemented in two ways:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;Iterative approach using a stack. (Compared to BFS that implemented using a queue)&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Recursive approach using the same function by recursion (The function call is implemented by a stack frame in the backend, so it’s actually similar to the first approach)&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;The basic idea of DFS using a stack is as follows:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;From the starting node, push it into the stack.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;While stack is not empty:&lt;/p&gt;
-
-    &lt;p&gt;pop a node from the top of the stack&lt;/p&gt;
-
-    &lt;p&gt;visit it (depends on our objective, visit here means different things)&lt;/p&gt;
-
-    &lt;p&gt;mark it as visited, and push its neighbours into the stack.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h5 id=&quot;example-subsets-recursion&quot;&gt;Example: Subsets, recursion&lt;/h5&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-python&quot;&gt;class Solution:
-    def subsets(self, nums: List[int]) -&amp;gt; List[List[int]]:
-        #backtracking
-        n = len(nums)
-        if n==0:
-            return []
-        def dfs(i, curr_path, res):
-            res.append(curr_path)
-            if len(curr_path)==n:
-                return
-            for j in range(i,n):
-                dfs(j+1, curr_path+[nums[j]], res)
-        res = []
-        curr_path = []
-        dfs(0, curr_path, res)
-        return res
-&lt;/code&gt;&lt;/pre&gt;</content><author><name>Jiajing Chen</name></author><category term="algorithm" /><category term="data structure" /><category term="dfs" /><category term="bfs" /><category term="graph" /><summary type="html">DFS and backtracking</summary></entry><entry><title type="html">The Little Schemer Reading Note Part I</title><link href="http://localhost:4000/scheme/post-lisp-little-schemer-part-1/" rel="alternate" type="text/html" title="The Little Schemer Reading Note Part I" /><published>2020-11-20T00:00:00-05:00</published><updated>2020-11-20T00:00:00-05:00</updated><id>http://localhost:4000/scheme/post-lisp-little-schemer-part-1</id><content type="html" xml:base="http://localhost:4000/scheme/post-lisp-little-schemer-part-1/">&lt;p&gt;&lt;img src=&quot;/assets/images/thumbnails/The_little_schemer.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;</content><author><name>Jiajing Chen</name></author><category term="algo" /><category term="algorithm" /><category term="data structure" /><category term="dfs" /><category term="bfs" /><category term="graph" /><summary type="html">BFS and level order traversal using queue</summary></entry><entry><title type="html">The Little Schemer Reading Note Part I</title><link href="http://localhost:4000/scheme/lisp-little-schemer-part-1/" rel="alternate" type="text/html" title="The Little Schemer Reading Note Part I" /><published>2020-11-20T00:00:00-05:00</published><updated>2020-11-20T00:00:00-05:00</updated><id>http://localhost:4000/scheme/lisp-little-schemer-part-1</id><content type="html" xml:base="http://localhost:4000/scheme/lisp-little-schemer-part-1/">&lt;p&gt;&lt;img src=&quot;/assets/images/thumbnails/The_little_schemer.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
 
@@ -459,7 +413,63 @@ In the part II we will talk more about recursion and lambda in this book. Stay t
 
 &lt;p&gt;&lt;a href=&quot;https://github.com/andybp85/hyLittleSchemer&quot;&gt;The Little Schemer in Hy repo&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://www.viget.com/articles/the-little-schemer-will-expand-blow-your-mind/&quot;&gt;A post about The Little Schemer&lt;/a&gt;&lt;/p&gt;</content><author><name>Jiajing Chen</name></author><category term="scheme" /><category term="recursion" /><category term="lisp" /><category term="scheme" /><category term="book" /><summary type="html">Recursion, recursion, and recursion... This book will blow your mind!</summary></entry><entry><title type="html">STAT110: The Probability course you don’t want to miss</title><link href="http://localhost:4000/stat/post-stat110-probability/" rel="alternate" type="text/html" title="STAT110: The Probability course you don't want to miss" /><published>2018-05-30T00:00:00-04:00</published><updated>2018-05-30T00:00:00-04:00</updated><id>http://localhost:4000/stat/post-stat110-probability</id><content type="html" xml:base="http://localhost:4000/stat/post-stat110-probability/">&lt;p&gt;I have always been fascinated by probability and statistics ever since I was in high school. I have taken a few courses in probability from school and online courses. But I would say that Joe’s probability course is one of my favorite courses of all time! It helped me gasp a deeper understanding in distribution and conditional probability. It also helped me connect the dots between different distributions and their applications.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.viget.com/articles/the-little-schemer-will-expand-blow-your-mind/&quot;&gt;A post about The Little Schemer&lt;/a&gt;&lt;/p&gt;</content><author><name>Jiajing Chen</name></author><category term="scheme" /><category term="recursion" /><category term="lisp" /><category term="scheme" /><category term="book" /><summary type="html">Recursion, recursion, and recursion... This book will blow your mind!</summary></entry><entry><title type="html">Intro to data structure and algorithm Part I</title><link href="http://localhost:4000/algo/algorithm-part-1/" rel="alternate" type="text/html" title="Intro to data structure and algorithm Part I" /><published>2020-11-20T00:00:00-05:00</published><updated>2020-11-20T00:00:00-05:00</updated><id>http://localhost:4000/algo/algorithm-part-1</id><content type="html" xml:base="http://localhost:4000/algo/algorithm-part-1/">&lt;p class=&quot;notice--primary&quot;&gt;&lt;em&gt;Today we are going to talk about Depth-first Search and backtracking. This is Part I of the intro to data structure and algo series. See others here.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt; 
+ &lt;/p&gt;
+
+&lt;p&gt;Depth-first search (DFS) is an algorithm for traversing or searching tree or graph data structures. It starts from the root node (if it’s a graph, you can select an arbitrary node) and goes along each branch as deep as possible before backtracking. Also we need to ensure that all the notes are marked as visited so we don’t need to visit the same node twice and got stuck in a loop.&lt;/p&gt;
+
+&lt;p&gt;On a high-level, DFS can be implemented in two ways:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Iterative approach using a stack. (Compared to BFS that implemented using a queue)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Recursive approach using the same function by recursion (The function call is implemented by a stack frame in the backend, so it’s actually similar to the first approach)&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;The basic idea of DFS using a stack is as follows:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;From the starting node, push it into the stack.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;While stack is not empty:&lt;/p&gt;
+
+    &lt;p&gt;pop a node from the top of the stack&lt;/p&gt;
+
+    &lt;p&gt;visit it (depends on our objective, visit here means different things)&lt;/p&gt;
+
+    &lt;p&gt;mark it as visited, and push its neighbours into the stack.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h5 id=&quot;example-subsets-recursion&quot;&gt;Example: Subsets, recursion&lt;/h5&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-python&quot;&gt;class Solution:
+    def subsets(self, nums: List[int]) -&amp;gt; List[List[int]]:
+        #backtracking
+        n = len(nums)
+        if n==0:
+            return []
+        def dfs(i, curr_path, res):
+            res.append(curr_path)
+            if len(curr_path)==n:
+                return
+            for j in range(i,n):
+                dfs(j+1, curr_path+[nums[j]], res)
+        res = []
+        curr_path = []
+        dfs(0, curr_path, res)
+        return res
+&lt;/code&gt;&lt;/pre&gt;</content><author><name>Jiajing Chen</name></author><category term="algo" /><category term="algorithm" /><category term="data structure" /><category term="dfs" /><category term="bfs" /><category term="graph" /><summary type="html">DFS and backtracking</summary></entry><entry><title type="html">Git Basic Part II</title><link href="http://localhost:4000/git/git-basic-part-2/" rel="alternate" type="text/html" title="Git Basic Part II" /><published>2020-11-20T00:00:00-05:00</published><updated>2020-11-20T00:00:00-05:00</updated><id>http://localhost:4000/git/git-basic-part-2</id><content type="html" xml:base="http://localhost:4000/git/git-basic-part-2/">&lt;ul&gt;
+  &lt;li&gt;Up Next&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;In the part II we will talk more about Git. Stay tuned!&lt;/p&gt;</content><author><name>Jiajing Chen</name></author><category term="git" /><category term="git" /><category term="branch" /><summary type="html">Git Part 2...</summary></entry><entry><title type="html">STAT110: The Probability course you don’t want to miss</title><link href="http://localhost:4000/stat/stat110-probability/" rel="alternate" type="text/html" title="STAT110: The Probability course you don't want to miss" /><published>2018-05-30T00:00:00-04:00</published><updated>2018-05-30T00:00:00-04:00</updated><id>http://localhost:4000/stat/stat110-probability</id><content type="html" xml:base="http://localhost:4000/stat/stat110-probability/">&lt;p&gt;I have always been fascinated by probability and statistics ever since I was in high school. I have taken a few courses in probability from school and online courses. But I would say that Joe’s probability course is one of my favorite courses of all time! It helped me gasp a deeper understanding in distribution and conditional probability. It also helped me connect the dots between different distributions and their applications.&lt;/p&gt;
 
 &lt;p&gt;Early this year, I have been watching the videos of STAT 110 Probability by Professor Joe Blitzstein on &lt;a href=&quot;https://www.youtube.com/playlist?list=PL2SOU6wwxB0uwwH80KTQ6ht66KWxbzTIo&quot;&gt;Youtube&lt;/a&gt; for 3 times. I almost listened to it before I went to bed every night!&lt;/p&gt;
 
