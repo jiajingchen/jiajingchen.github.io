@@ -14,9 +14,9 @@ I am data scientist who develops machine learning and statistical models that pr
 
 Interests
 ============
-I am interested in the state-of-the-art model development in recommendation system, deep learning, and NLP (Transformer, BERT). I like coding and solving challenging problems.
+I am interested in the state-of-the-art model development in recommendation system, deep learning, and NLP. I like solving challenging problems.
 
-In my spare time I like reading, drawing, and spending time outdoors.
+In my spare time I like reading, drawing (See my gallery [here](https://jiajingchen.github.io/gallery/)), and spending time outdoors.
 
 
 
