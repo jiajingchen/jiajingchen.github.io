@@ -88,7 +88,7 @@ Ok, let's get started! Today we are going through some basic concepts in the fir
 `rmember? a l`: remove the first occurance of the atom `a` from the  list `l`. E.g `rember b (a b c b c)` will return `(a c b c)`.
 
 
-![](/assets/images/post_image/little_schemer_1.jpg)
+![](/assets/images/post_image/little_schemer_1.jpg){:height="50%" width="50%"}
 
 ## Examples using recursion
 
@@ -168,7 +168,7 @@ In the part II we will talk more about recursion and lambda in this book. Stay t
 {: .text-justify}
 
 
-![](/assets/images/post_image/may_the_recursion_be_with_u.png)
+![](/assets/images/post_image/may_the_recursion_be_with_u.png){:height="80%" width="80%"}
 
 
 
