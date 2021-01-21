@@ -12,7 +12,7 @@ sidebar:
   nav: "docs"
 ---
 
-I have always been fascinated by probability and statistics ever since I was in high school. I have taken a few courses in probability from school and online courses. But I would say that Joe's probability course is one of my favorite courses of all time! It helped me gasp a deeper understanding in distribution and conditional probability. It also helped me connect the dots between different distributions and their applications.
+I have always been fascinated by probability and statistics ever since I was in high school. I have taken a few courses in probability from school and online courses. But I would say that Joe's probability course is one of my favorite courses of all time! It helped me grasp a deeper understanding in distribution and conditional probability. It also helped me connect the dots between different distributions and their applications.
 
 Early this year, I have been watching the videos of STAT 110 Probability by Professor Joe Blitzstein on [Youtube](https://www.youtube.com/playlist?list=PL2SOU6wwxB0uwwH80KTQ6ht66KWxbzTIo) for 3 times. I almost listened to it before I went to bed every night! 
 
