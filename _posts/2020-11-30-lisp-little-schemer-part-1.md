@@ -7,6 +7,9 @@ excerpt: "Recursion, recursion, and recursion... This book will blow your mind!"
 date:   2020-11-20
 category: scheme
 tags: [recursion, lisp, scheme, book]
+toc: true
+toc_sticky: true
+toc_label: "The Little Schemer Reading Note"
 comments: true
 sidebar:
   nav: "docs"
