@@ -173,7 +173,7 @@ In the part II we will talk more about recursion and lambda in this book. Stay t
 
 
 
-### References
+## References
 
 [The little schemer repo](https://github.com/pkrumins/the-little-schemer)
 
